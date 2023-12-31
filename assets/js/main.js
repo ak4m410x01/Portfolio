@@ -247,6 +247,71 @@
   });
 
   /**
+   * Certificate isotope and filter
+   */
+  window.addEventListener("load", () => {
+    let certificatesContainer = select(".certificates-container");
+    if (certificatesContainer) {
+      let certificatesIsotope = new Isotope(certificatesContainer, {
+        itemSelector: ".certificates-item",
+        layoutMode: "fitRows",
+      });
+
+      let certificatesFilters = select("#certificates-flters li", true);
+
+      on(
+        "click",
+        "#certificates-flters li",
+        function (e) {
+          e.preventDefault();
+          certificatesFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
+
+          certificatesIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+        },
+        true
+      );
+    }
+  });
+
+  /**
+   * Initiate Certificates lightbox
+   */
+  const certificatesLightbox = GLightbox({
+    selector: ".certificates-lightbox",
+  });
+
+  /**
+   * Initiate Certificates details lightbox
+   */
+  const certificatesDetailsLightbox = GLightbox({
+    selector: ".certificates-details-lightbox",
+    width: "90%",
+    height: "90vh",
+  });
+
+  /**
+   * Certificates details slider
+   */
+  new Swiper(".certificates-details-slider", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
+  /**
    * Initiate Pure Counter
    */
   new PureCounter();
