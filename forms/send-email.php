@@ -26,4 +26,4 @@ $mail->isHTML(true);
 $mail->Subject = $subject;
 $mail->Body = $message;
 $mail->send();
-header("Location: ../index.html");
+header("Location: https://ak4m410x01.github.io/Portfolio/index.html");
