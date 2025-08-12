@@ -113,10 +113,12 @@ h6 {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: 0.3s;
 }
 
 #header .social-links a:hover {
   background: #18d26e;
+  transform: scale(1.1);
 }
 
 @media (max-width: 992px) {
@@ -354,6 +356,8 @@ section.section-show {
 section .container {
   background: rgba(0, 0, 0, 0.9);
   padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -510,6 +514,14 @@ section .container {
   background-color: #18d26e;
 }
 
+.skills-content ul li {
+  transition: 0.3s;
+}
+
+.skills-content ul li:hover {
+  transform: translateX(5px);
+}
+
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
@@ -519,6 +531,7 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+  border-radius: 8px;
 }
 
 .interests .icon-box i {
@@ -538,6 +551,7 @@ section .container {
 
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-5px);
 }
 
 /*--------------------------------------------------------------
@@ -728,6 +742,8 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio .portfolio-wrap::before {
@@ -838,6 +854,10 @@ section .container {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+
+.portfolio .portfolio-wrap:hover {
+  transform: translateY(-10px);
 }
 
 /*--------------------------------------------------------------
@@ -958,6 +978,8 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .certificates .certificates-wrap::before {
@@ -1070,6 +1092,10 @@ section .container {
   right: 15px;
 }
 
+.certificates .certificates-wrap:hover {
+  transform: translateY(-10px);
+}
+
 /*--------------------------------------------------------------
 # Certificates Details
 --------------------------------------------------------------*/
@@ -1150,6 +1176,8 @@ section .container {
   padding: 20px;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact .info-box i.bx {
@@ -1199,6 +1227,8 @@ section .container {
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact .php-email-form .error-message {
@@ -1343,5 +1373,10 @@ section .container {
 }
 .portfolio-wrap img {
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.portfolio-wrap:hover img {
+  transform: scale(1.05);
 }
