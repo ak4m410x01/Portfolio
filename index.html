@@ -1,1174 +1,1053 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abdullah Kamal - Full Stack .NET Developer</title>
+        <meta name="description"
+            content="Full Stack .NET Developer with 2+ years experience in enterprise applications, cloud solutions, and scalable software architecture">
+        <meta name="keywords"
+            content=".NET Developer, Full Stack Developer, C#, ASP.NET, Cloud Architecture, Software Engineer">
 
-    <title>Abdullah Kamal Portfolio</title>
-    <meta content name="description">
-    <meta content name="keywords">
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/components.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </head>
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-  </head>
-
-
-  <body>
-
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="container">
-
-        <h1><a href="index.html">Abdullah Kamal</a></h1>
-        <h2>
-          I'm a <span class="typed" data-typed-items="Software Engineer, Full Stack Developer, .NET Developer"></span>
-        </h2>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link active" href="#header">Home</a></li>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#resume">Resume</a></li>
-            <li><a class="nav-link" href="#portfolio">Projects</a></li>
-            <li><a class="nav-link" href="#certificates">Certificates</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
-        <div class="social-links">
-
-          <!-- Google Mail -->
-          <a target="_blank" href="mailto:abdullah.kamal0x01@gmail.com" class="envelope-at-fill">
-            <i class="bi bi-envelope-at-fill"></i>
-          </a>
-
-          <!-- Microsoft Outlook -->
-          <a target="_blank" href="mailto:abdullah.kamal0x01@outlook.com" class="envelope-at">
-            <i class="bi bi-envelope-at"></i>
-          </a>
-
-          <!-- LinkedIn -->
-          <a target="_blank" href="https://www.linkedin.com/in/ak4m410x01" class="linkedin">
-            <i class="bi bi-linkedin"></i>
-          </a>
-
-          <!-- GitHub -->
-          <a target="_blank" href="https://github.com/ak4m410x01" class="github">
-            <i class="bi bi-github"></i>
-          </a>
-
-          <!-- GitLab -->
-          <a target="_blank" href="https://gitlab.com/ak4m410x01" class="gitlab">
-            <i class="bi bi-gitlab"></i>
-          </a>
-
-          <!-- Twitter-X -->
-          <a target="_blank" href="https://x.com/ak4m410x01" class="twitter">
-            <i class="bi bi-twitter-x"></i>
-          </a>
-
-          <!-- WhatsApp -->
-          <a target="_blank" href="https://wa.me/201040534161/" class="whatsapp">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-
-          <a target="_blank" href="https://wa.me/201147301642/" class="whatsapp">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-
-          <!-- Telegram -->
-          <a target="_blank" href="https://t.me/ak4m410x010/" class="telegram">
-            <i class="bi bi-telegram"></i>
-          </a>
-
-          <a target="_blank" href="https://t.me/ak4m410x01/" class="telegram">
-            <i class="bi bi-telegram"></i>
-          </a>
-
-
+    <body>
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>Initializing Portfolio...</p>
+            </div>
         </div>
 
-      </div>
-    </header><!-- End Header -->
+        <!-- Enhanced Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">Abdullah Kamal</span>
+                        <span class="logo-subtitle">.NET Developer</span>
+                    </div>
+                </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-
-      <!-- ======= About Me ======= -->
-      <div class="about-me container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Learn more about me</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/me.jpg" class="img-fluid" alt>
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software Engineer | Full Stack Developer | .NET Developer</h3>
-            <br>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Field:</strong>
-                    <span>Computer Science</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong>
-                    <span>Cairo, Egypt</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
-                    <span>Bachelor</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong>
-                    <span>Arabic (Native), English (Professional working proficiency)</span>
-                  </li>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong>
-                    <span>abdullah.kamal0x01@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailtwo:</strong>
-                    <span>abdullah.kamal0x01@outlook.com</span>
-                  </li>
-                </ul>
-              </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="nav-toggle" id="navToggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
             </div>
-            <br>
-            <p>Full Stack .NET Developer with 2 years of experience in C#, ASP.NET Core MVC, and RESTful APIs,
-              specializing in scalable backend systems. Proficient in clean architecture and modern design
-              patterns for efficient, maintainable code.
+        </nav>
 
-              <br />
-              <br />
-
-              With a deep expertise in C# and ASP.NET Core, I am a dedicated .NET Developer with a strong grasp of
-              software development principles and best practices. I specialize in building robust web applications,
-              RESTful APIs, and seamless database integrations using modern technologies and frameworks such as Entity
-              Framework Core and LINQ. My approach emphasizes clean, maintainable code and performance optimization,
-              ensuring that solutions are not only functional but also efficient and scalable.
-
-              <br />
-              <br />
-
-              I thrive in collaborative team environments, where I contribute my skills to deliver high-quality,
-              user-centric solutions that align with client needs and exceed expectations. I am committed to continuous
-              learning, staying updated with the latest industry trends and evolving technologies to bring the most
-              effective solutions to every project.
-
-              <br />
-              <br />
-
-              Whether working on complex backend systems or refining front-end interfaces, I bring a keen eye for
-              detail, a problem-solving mindset, and a passion for delivering impactful software solutions that drive
-              business success.
-            </p>
-          </div>
-        </div>
-
-      </div><!-- End About Me -->
-
-      <!-- ======= Skills  ======= -->
-      <div class="skills container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-xl-4">
-            <ul>
-              <li>
-                <b>Programming Languages</b>
-              </li>
-              <ul>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-              </ul>
-            </ul>
-
-            <ul>
-              <li><b>Conceptual Knowledge</b></li>
-              <ul>
-                <li>OOP</li>
-                <li>Data Structures</li>
-                <li>Algorithms</li>
-                <li>SOLID Principles</li>
-                <li>Design Patterns</li>
-                <li>REST API</li>
-                <li>API Design and Development</li>
-                <li>3-tier Architecture</li>
-                <li>Clean Architecture</li>
-                <li>Agile methodologies</li>
-                <li>Operating Systems</li>
-                <li>CI/CD</li>
-              </ul>
-            </ul>
-
-            <ul>
-              <li><b>Operating Systems</b></li>
-              <ul>
-                <li>Linux ( Ubuntu, Debian, CentOS, RedHat,... )</li>
-                <li>Windows & Windows Server</li>
-              </ul>
-            </ul>
-
-            <ul>
-              <li><b>Soft Skills</b></li>
-              <ul>
-                <li>Problem Solving</li>
-                <li>Critical Thinking</li>
-                <li>Clean Code</li>
-                <li>Code Review</li>
-                <li>Unit Testing</li>
-                <li>Debugging</li>
-              </ul>
-            </ul>
-          </div>
-
-          <div class="col-xl-4">
-            <ul>
-              <li><b>Back-End</b></li>
-              <ul>
-                <li>LINQ</li>
-                <li>EF Core</li>
-                <li>Dapper</li>
-                <li>ASP.NET Core MVC</li>
-                <li>ASP.NET Core Web API</li>
-                <li>Jwt Tokens</li>
-                <li>Refresh Tokens</li>
-                <li>Authentication</li>
-                <li>Authorization</li>
-                <li>Identity</li>
-                <li>Specification Pattern</li>
-                <li>Repository Pattern</li>
-                <li>Unit of Work</li>
-                <li>Mediator</li>
-                <li>CQRS</li>
-                <li>AutoMapper</li>
-                <li>Fluent Validation</li>
-                <li>Fluent API</li>
-                <li>Payment Integration</li>
-                <li>Dependency Injection</li>
-                <li>API Integration</li>
-                <li>SignalR</li>
-                <li>Real-time</li>
-                <li>Django</li>
-                <li>Logging</li>
-                <li>Caching</li>
-                <li>gRPC</li>
-                <li>Microservices (basic)</li>
-              </ul>
-            </ul>
-
-            <ul>
-              <li><b>Front-End</b></li>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-              </ul>
-            </ul>
-          </div>
-
-          <div class="col-xl-4">
-
-            <ul>
-              <li><b>Databases</b></li>
-              <ul>
-                <li>SQL</li>
-                <li>MS SQL Server</li>
-                <li>PostgreSQL</li>
-                <li>Redis</li>
-              </ul>
-            </ul>
-
-            <ul>
-              <li><b>Tools</b></li>
-              <ul>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>Docker</li>
-                <li>Docker Compose</li>
-                <li>Kubernetes</li>
-                <li>IIS</li>
-                <li>Azure</li>
-                <li>AWS</li>
-                <li>Postman</li>
-                <li>Apidog</li>
-              </ul>
-            </ul>
-
-          </div>
-        </div>
-
-      </div><!-- End Skills -->
-
-      <!-- ======= Interests ======= -->
-      <div class="interests container">
-
-        <div class="section-title">
-          <h2>Interests</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3>Software Engineering</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-              <h3>Backend Development</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
-              <i class="bi bi-code-slash" style="color: #e80368;"></i>
-              <h3>APIs</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
-              <i class="bi bi-hdd-rack" style="color: #e361ff;"></i>
-              <h3>Microservices Architecture</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-database-fill-gear" style="color: #47aeff;"></i>
-              <h3>Databases</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-database-fill-check" style="color: #ffa76e;"></i>
-              <h3>PostgreSQL</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-lightbulb-fill" style="color: #11dbcf;"></i>
-              <h3>Problem Solving</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-laptop" style="color: #4233ff;"></i>
-              <h3>Computer Science</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-ubuntu" style="color: #b2904f;"></i>
-              <h3>Linux</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-braces" style="color: #b20969;"></i>
-              <h3>Coding</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3>Networking</h3>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="bi bi-lock-fill" style="color: #29cc61;"></i>
-              <h3>Security</h3>
-            </div>
-          </div>
-
-        </div>
-
-      </div><!-- End Interests -->
-
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Check My Resume => <a target="_blank"
-              href="https://drive.google.com/file/d/1klPNTj8ZyD9IDCCMTtqCIvqKvwLN4eXt/view">here</a>
-            <= </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Work Experience</h3>
-
-            <!-- Egyptian Armed Forces Experience -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>Full Stack Developer</h4>
-                <h5>04/2025 - Present</h5>
-                <p>
-                  <em>Egyptian Armed Forces (Military Service), Egypt</em>
-                </p>
-                <p>Developed .NET systems during military service and part-time ERP/web apps for National Quality.</p>
-                <br>
-              </div>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
             </div>
 
-            <!-- National Quality Experience -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>Full Stack Developer</h4>
-                <h5>10/2024 - Present</h5>
-                <p>
-                  <em>
-                    <a target="_blank" href="https://nqs.sa">
-                      National Quality Stores Foundation of Information Technology
-                    </a>, Cairo, Egypt
-                  </em>
-                </p>
-                <p>Collaborated on ERP systems, optimizing web apps and databases for performance and security.</p>
-                <br>
-              </div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Available for new opportunities</span>
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">Abdullah Kamal</span>
+                        </h1>
+
+                        <div class="animated-title-container">
+                            <h2 class="hero-subtitle">
+                                <span class="static-text">=> </span>
+                                <span class="animated-title">
+                                    <span class="title-words"></span>
+                                    <span class="animated-cursor">|</span>
+                                </span>
+                            </h2>
+                        </div>
+
+                        <p class="hero-description">
+                            I design and build <strong>scalable .NET applications</strong> that are secure, cloud-ready,
+                            and built to last. Specializing in enterprise solutions, clean architecture, and
+                            high-performance systems.
+                        </p>
+
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number" data-count="2">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-count="20">0</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1klPNTj8ZyD9IDCCMTtqCIvqKvwLN4eXt/view"
+                                class="btn btn-outline" download>
+                                <span>Download CV</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="profile-image-container">
+                            <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal - Full Stack .NET Developer"
+                                class="profile-image">
+                            <div class="profile-frame"></div>
+                            <div class="profile-tech-badge">
+                                <i class="fab fa-microsoft"></i>
+                                <span>.NET Expert</span>
+                            </div>
+                            <div class="profile-status">
+                                <div class="status-dot"></div>
+                                <span>Available for work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Soft Forte Experience -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>.NET Developer</h4>
-                <h5>09/2024 - 05/2025</h5>
-                <p>
-                  <em>
-                    <a target="_blank" href="https://www.linkedin.com/company/soft-forte/">
-                      Soft Forte
-                    </a>, Cairo, Egypt
-                  </em>
-                </p>
-                <p>Built web applications with optimized performance and strong security.</p>
-                <br>
-              </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
             </div>
+        </section>
 
-            <!-- Upwork Experience -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>Back-End Developer</h4>
-                <h5>07/2024 - Present</h5>
-                <p>
-                  <em>
-                    <a target="_blank" href="https://www.upwork.com">
-                      Upwork
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Crafting robust software solutions with precision and passion</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right">
+                        <div class="about-intro">
+                            <h3>Transforming Ideas into Scalable Solutions</h3>
+                            <p>
+                                I'm a <strong>Full Stack .NET Developer</strong> with <strong>2+ years</strong> of
+                                professional experience
+                                specializing in enterprise-grade applications. My expertise lies in transforming complex
+                                business
+                                requirements into reliable, secure, and maintainable software solutions.
+                            </p>
+                            <p>
+                                With a strong foundation in <strong>competitive programming</strong> and hands-on
+                                experience with
+                                <strong>mission-critical systems</strong>, I bring a unique combination of algorithmic
+                                thinking
+                                and practical software engineering to every project.
+                            </p>
+                        </div>
+
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Cairo, Egypt</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <strong>Experience</strong>
+                                    <span>2+ Years</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <strong>Education</strong>
+                                    <span>B.Sc. Computer Science</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-philosophy">
+                            <h4>Development Philosophy</h4>
+                            <div class="philosophy-grid">
+                                <div class="philosophy-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h5>Security First</h5>
+                                    <p>Building secure applications with robust authentication and authorization systems
+                                    </p>
+                                </div>
+                                <div class="philosophy-item">
+                                    <i class="fas fa-rocket"></i>
+                                    <h5>Performance Focused</h5>
+                                    <p>Optimized solutions that scale efficiently under heavy loads</p>
+                                </div>
+                                <div class="philosophy-item">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Clean Code</h5>
+                                    <p>Maintainable, well-documented, and testable solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image" data-aos="fade-left">
+                        <div class="image-container">
+                            <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal" class="main-profile-image">
+                            <div class="image-frame"></div>
+                            <div class="floating-tech">
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Comprehensive skills across the full development stack</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Backend Development -->
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C# & .NET Core</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">ASP.NET Web API</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Entity Framework Core</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Development -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5/CSS3</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap 5</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & DevOps -->
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Database & DevOps</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL Server</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker & Kubernetes</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Azure & AWS</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="tech-stack-section" data-aos="fade-up">
+                    <h3>Technology Stack</h3>
+                    <div class="stack-grid">
+                        <div class="stack-category">
+                            <h4>Backend Technologies</h4>
+                            <div class="stack-items">
+                                <span class="stack-item">ASP.NET Core</span>
+                                <span class="stack-item">Entity Framework</span>
+                                <span class="stack-item">Dapper</span>
+                                <span class="stack-item">SignalR</span>
+                                <span class="stack-item">gRPC</span>
+                                <span class="stack-item">Redis</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Frontend Technologies</h4>
+                            <div class="stack-items">
+                                <span class="stack-item">HTML5</span>
+                                <span class="stack-item">CSS3</span>
+                                <span class="stack-item">JavaScript</span>
+                                <span class="stack-item">Bootstrap</span>
+                                <span class="stack-item">jQuery</span>
+                            </div>
+                        </div>
+                        <div class="stack-category">
+                            <h4>Tools & DevOps</h4>
+                            <div class="stack-items">
+                                <span class="stack-item">Git & GitHub</span>
+                                <span class="stack-item">Docker</span>
+                                <span class="stack-item">Azure DevOps</span>
+                                <span class="stack-item">Postman</span>
+                                <span class="stack-item">Visual Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Professional Journey</h2>
+                    <p class="section-subtitle">Building expertise through real-world challenges and innovative
+                        solutions</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Egyptian Armed Forces -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025 - Present</div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Full Stack Developer</h3>
+                                <h4>Egyptian Armed Forces</h4>
+                                <p>
+                                    Design, develop, and maintain mission-critical systems with focus on security,
+                                    reliability, and high performance for national defense operations. Implement
+                                    robust security protocols and ensure system integrity.
+                                </p>
+                                <ul class="timeline-responsibilities">
+                                    <li>Develop secure, scalable applications for defense operations</li>
+                                    <li>Implement robust authentication and authorization systems</li>
+                                    <li>Optimize system performance and ensure 99.9% uptime</li>
+                                    <li>Collaborate with cross-functional teams on system architecture</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">.NET Core</span>
+                                    <span class="tech-tag">Security</span>
+                                    <span class="tech-tag">Enterprise Systems</span>
+                                    <span class="tech-tag">High Availability</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- National Quality Stores -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Full Stack Developer</h3>
+                                <h4>National Quality Stores Foundation</h4>
+                                <p>
+                                    Lead development of comprehensive ERP systems, implementing scalable architectures
+                                    and optimizing database performance for enterprise operations across multiple
+                                    departments.
+                                </p>
+                                <ul class="timeline-responsibilities">
+                                    <li>Architect and develop ERP modules for finance, HR, and inventory</li>
+                                    <li>Optimize SQL queries and database performance</li>
+                                    <li>Implement role-based access control systems</li>
+                                    <li>Integrate third-party APIs and payment gateways</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">ASP.NET Core</span>
+                                    <span class="tech-tag">ERP Systems</span>
+                                    <span class="tech-tag">SQL Server</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Forte -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - 2025</div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="timeline-text">
+                                <h3>.NET Developer</h3>
+                                <h4>Soft Forte</h4>
+                                <p>
+                                    Developed custom web applications with focus on security, maintainability, and
+                                    performance. Collaborated with clients to understand requirements and deliver
+                                    tailored solutions.
+                                </p>
+                                <ul class="timeline-responsibilities">
+                                    <li>Built custom web applications using ASP.NET Core</li>
+                                    <li>Implemented secure authentication systems</li>
+                                    <li>Optimized application performance and scalability</li>
+                                    <li>Conducted code reviews and implemented best practices</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">Web Applications</span>
+                                    <span class="tech-tag">Security</span>
+                                    <span class="tech-tag">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upwork Freelance -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Freelance Back-End Developer</h3>
+                                <h4>Upwork</h4>
+                                <p>
+                                    Deliver custom .NET solutions for international clients, resolving performance
+                                    bottlenecks and integrating third-party services to meet diverse business needs.
+                                </p>
+                                <ul class="timeline-responsibilities">
+                                    <li>Develop RESTful APIs and backend services</li>
+                                    <li>Integrate third-party services and payment systems</li>
+                                    <li>Optimize database performance and query efficiency</li>
+                                    <li>Provide technical consulting and solution architecture</li>
+                                </ul>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">API Development</span>
+                                    <span class="tech-tag">System Integration</span>
+                                    <span class="tech-tag">Performance Tuning</span>
+                                    <span class="tech-tag">Consulting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world solutions delivering measurable impact and business value</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- ERP System -->
+                    <div class="project-card" data-aos="flip-left">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Enterprise ERP System</h3>
+                                <span class="project-date">2025 - Present</span>
+                            </div>
+                            <p>
+                                Comprehensive enterprise resource planning solution streamlining finance, HR, inventory,
+                                and sales operations with advanced role-based access control and real-time analytics.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">EF Core</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                            <div class="project-impact">
+                                <div class="impact-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>40% Efficiency Improvement</span>
+                                </div>
+                                <div class="impact-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Real-time Reporting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROCSystem -->
+                    <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>ROCSystem</h3>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <p>
+                                Management system for Egyptian Reserve Officers College handling internal office
+                                operations,
+                                administrative workflows, and secure document management with advanced access controls.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">SQL Server</span>
+                                <span class="tech-tag">Identity</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <div class="project-impact">
+                                <div class="impact-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Streamlined Workflows</span>
+                                </div>
+                                <div class="impact-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Enhanced Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LBSNEE -->
+                    <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/ak4m410x01/LBSNEE" class="project-link"
+                                        aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>LBSNEE - E-Commerce API</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p>
+                                Localized shopping API enabling customers to connect with clothing stores, featuring
+                                Redis caching, Dockerized deployment, and load balancing for high performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Load Balancing</span>
+                            </div>
+                            <div class="project-impact">
+                                <div class="impact-item">
+                                    <i class="fas fa-bolt"></i>
+                                    <span>High Performance</span>
+                                </div>
+                                <div class="impact-item">
+                                    <i class="fas fa-expand"></i>
+                                    <span>Scalable Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sakany -->
+                    <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Live Demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/ak4m410x01/Sakany" class="project-link"
+                                        aria-label="Source Code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Sakany - Real Estate Platform</h3>
+                                <span class="project-date">2024</span>
+                            </div>
+                            <p>
+                                Real estate API connecting customers with realtors for renting and buying properties,
+                                featuring JWT authentication, Twilio integration, and CQRS pattern implementation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">ASP.NET Core</span>
+                                <span class="tech-tag">EF Core</span>
+                                <span class="tech-tag">CQRS</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Twilio</span>
+                            </div>
+                            <div class="project-impact">
+                                <div class="impact-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>SMS Integration</span>
+                                </div>
+                                <div class="impact-item">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Secure Authentication</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cta" data-aos="fade-up">
+                    <p>Interested in seeing more projects?</p>
+                    <a href="https://github.com/ak4m410x01" class="btn btn-primary" target="_blank">
+                        <span>View GitHub Profile</span>
+                        <i class="fab fa-github"></i>
                     </a>
-                  </em>
-                </p>
-                <p>
-                  Built optimized ASP.NET Core APIs, boosting performance and client satisfaction.
-                  <br><br>
-                <h6>What I Offer 🔥 :</h6>
-                <ul>
-                  <li> 🖥️ Full back-end development for web and mobile applications.</li>
-                  <li> 🗄️ Database design, implementation, and optimization.</li>
-                  <li> 🌐 Design and implementation of RESTful APIs.</li>
-                  <li> 🔗 Integration with third-party services and APIs.</li>
-                  <li> 🔒 Securing APIs (authentication, authorization, rate limiting).</li>
-                  <li> 🛠️ Code refactoring and optimization.</li>
-                  <li> 📊 Technical consultation for back-end architecture.</li>
-                  <li> 🐞 Troubleshooting and bug fixing.</li>
-                  <li>📚 Providing training and documentation for development teams.</li>
-                </ul>
-                </p>
-              </div>
-            </div>
-
-            <hr />
-
-            <h3 class="resume-title">Volunteering</h3>
-
-            <!-- ATHAR Team -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>Instructor</h4>
-                <h5>12/2022 – 11/2023</h5>
-                <p>
-                  <em>ATHAR Team</em>
-                </p>
-                <p>Conducted Network Fundamentals and Linux Administration workshops. Created training materials,
-                  received positive feedback.</p>
-                <br>
-              </div>
-            </div>
-
-            <!-- ICPC Sohag University Community -->
-            <div class="col-lg-12">
-              <div class="resume-item">
-                <h4>Mentor</h4>
-                <h5>12/2021 – 11/2022</h5>
-                <p>
-                  <em>ICPC Sohag University Community</em>
-                </p>
-                <p>Guided students in learning C++ fundamentals. Organized problem-solving practice on CodeForces.</p>
-                <br>
-              </div>
-            </div>
-
-            <hr />
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>.NET Developer</h4>
-              <h5>05/2024 - 11/2024</h5>
-              <p>
-                <em>
-                  <a target="_blank" href="https://depi.gov.eg/">
-                    Digital Egypt Pioneers Initiative DEPI
-                  </a>
-                </em>
-              </p>
-              <p>
-              <ul>
-                <li>Introduction to SQL Programming.</li>
-                <li>Programming in C#.</li>
-                <li>Programming in HTML5, JavaScript & CSS3.</li>
-                <li>Developing ASP.NET Core MVC Web Applications.</li>
-                <li>ASP Core Web API.</li>
-              </ul>
-              </p>
-            </div>
-
-            <br />
-
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science</h4>
-              <h5>10/2020 - 06/2024</h5>
-              <p>
-                <em>
-                  <a target="_blank" href="https://fci.sohag-univ.edu.eg/main/">
-                    Faculty of Computers and Artificial Intelligence
-                  </a> / <a target="_blank" href="https://www.sohag-univ.edu.eg/ar/?page_id=20049">
-                    Sohag University
-                  </a>
-                </em>
-              </p>
-              <p>
-              <ul>
-                <li><b>Grade</b>: Very Good</li>
-                <li><b>Graduation Project</b>: <a
-                    href="https://github.com/ak4m410x01/Examination_Platform_API/">Examination Platform</a>
-                  <ul>
-                    <li><b>Role</b>: Backend</li>
-                  </ul>
-                </li>
-                <li>Study multiple concepts of Computer Science field.</li>
-                <li>Study Programming Fundamentals with C++, OOP, Data Structures, and Algorithms. </li>
-                <li>Study Databases design ERD and mapping and implement in RDBMS like MySQL and PostgreSQL.</li>
-                <li>Learn System Administration with Linux [RHCSA] & Windows Server [MCSA].</li>
-                <li>Learn Networking [Routing & Switching].</li>
-                <li>Earn some soft skills like communication, working with team, and time management.</li>
-              </ul>
-              </p>
-            </div>
-            <hr />
-
-            <!-- Awards Section -->
-            <div class="col-lg-12">
-              <h3 class="resume-title">Awards</h3>
-              <div class="resume-item">
-                <h4>ICPC Egyptian Collegiate Programming Contest</h4>
-                <h5>25/08/2022</h5>
-                <p>
-                  <em>Team: ALPHA, Rank: 21</em>
-                </p>
-                <p>
-                  ICPC Profile: Abdullah Kamal<br>
-                  CodeForces Profile: <a href="https://codeforces.com/profile/ak4m410x01">ak4m410x01</a><br>
-                  LeetCode Profile: <a href="https://leetcode.com/u/ak4m410x01">ak4m410x01</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Projects Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>My Projects</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-api">API</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <!-- Sakany Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sakany_cover_01.jpg" class="img-fluid" alt="" width="100%">
-              <div class="portfolio-info">
-                <h4>Sakany</h4>
-                <p>Sakany</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/sakany_cover_01.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Sakany"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/Sakany.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <!-- ECommerceAPI Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ecommerceapi_cover_01.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>E-Commerce</h4>
-                <p>E-Commerce API</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ecommerceapi_cover_01.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="E-Commerce API"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/ECommerce_API.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Achievements & Recognition</h2>
+                    <p class="section-subtitle">Demonstrating excellence in technology, leadership, and continuous
+                        learning</p>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- MealsOrderingApplication Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/MealsOrderingApplication_cover_01.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Meals Ordering Application</h4>
-                <p>Meals Ordering Application API</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/MealsOrderingApplication_cover_01.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Meals Ordering Application"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/MealsOrderingApplication_API.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
+                <div class="achievements-grid">
+                    <div class="achievement-card" data-aos="zoom-in">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>ICPC ECPC 2022</h3>
+                        <p>Ranked #21 out of 300+ teams in the Egyptian Collegiate Programming Contest, showcasing
+                            exceptional problem-solving skills.</p>
+                        <span class="achievement-date">August 2022</span>
+                    </div>
+
+                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Technical Mentor & Instructor</h3>
+                        <p>Mentored 50+ students in competitive programming and conducted workshops on Network
+                            Fundamentals and Linux Administration.</p>
+                        <span class="achievement-date">2021 - 2023</span>
+                    </div>
+
+                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>DEPI Certified Developer</h3>
+                        <p>Completed intensive .NET Developer program through Digital Egypt Pioneers Initiative,
+                            mastering enterprise development.</p>
+                        <span class="achievement-date">2024</span>
+                    </div>
+
+                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Open Source Contributor</h3>
+                        <p>Active contributor to various open-source projects with focus on .NET ecosystem and developer
+                            tools.</p>
+                        <span class="achievement-date">Ongoing</span>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Examination_Platform Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/examination_platform_cover_01.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Examination Platform</h4>
-                <p>Examination Platform API</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/examination_platform_cover_01.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Examination Platform"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/Examination_Platform_API.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
+                <!-- Coding Profiles -->
+                <div class="coding-profiles" data-aos="fade-up">
+                    <h3>Coding Profiles</h3>
+                    <div class="profiles-grid">
+                        <a href="https://github.com/ak4m410x01" class="profile-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <small>ak4m410x01</small>
+                        </a>
+                        <a href="https://leetcode.com/u/ak4m410x01" class="profile-link" target="_blank">
+                            <i class="fas fa-code"></i>
+                            <span>LeetCode</span>
+                            <small>ak4m410x01</small>
+                        </a>
+                        <a href="https://codeforces.com/profile/ak4m410x01" class="profile-link" target="_blank">
+                            <i class="fas fa-chart-line"></i>
+                            <span>CodeForces</span>
+                            <small>ak4m410x01</small>
+                        </a>
+                        <a href="https://icpc.global/ICPCID/RYCWA1HDIYZ3" class="profile-link" target="_blank">
+                            <i class="fas fa-trophy"></i>
+                            <span>ICPC Global</span>
+                            <small>Official Profile</small>
+                        </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <!-- GYM API Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gym_api_cover_01.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>GYM API</h4>
-                <p>GYM Management Application API</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/gym_api_cover_01.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="GYM"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/GYM_API.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Ready to bring your ideas to life? I'm just a message away!</p>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- TODO API Project  -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-api">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/todo_api_cover_1.png" class="img-fluid" alt>
-              <div class="portfolio-info">
-                <h4>TODO</h4>
-                <p>TODO API</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/todo_api_cover_1.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="TODO"><i class="bx bx-plus"></i></a>
-                  <a href="./projects/TODO_API.html" data-gallery="portfolioDetailsGallery"
-                    data-glightbox="type: external" class="portfolio-details-lightbox" title="Project Details"><i
-                      class="bx bx-link"></i></a>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-intro">
+                            <h3>Get In Touch</h3>
+                            <p>
+                                I'm currently available for freelance work and full-time opportunities.
+                                Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                            </p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:abdullah.kamal0x01@gmail.com">abdullah.kamal0x01@gmail.com</a>
+                                    <a href="mailto:abdullah.kamal0x01@outlook.com">abdullah.kamal0x01@outlook.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+201040534161">+20 104 053 4161</a>
+                                    <span>Available via WhatsApp</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>Cairo, Egypt</span>
+                                    <span>Open to remote work</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Follow Me</h4>
+                            <div class="social-grid">
+                                <a href="https://linkedin.com/in/ak4m410x01" class="social-link" target="_blank"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/ak4m410x01" class="social-link" target="_blank"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://ak4m410x01.vercel.app" class="social-link" target="_blank"
+                                    aria-label="Portfolio">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Portfolio</span>
+                                </a>
+                                <a href="http://wa.me/201040534161" class="social-link" target="_blank"
+                                    aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="https://t.me/ak4m410x01" class="social-link" target="_blank"
+                                    aria-label="Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                    <span>Telegram</span>
+                                </a>
+                                <a href="https://www.notion.so/Portfolio-27e4b16f264280ea9e3dcc880c060ca1"
+                                    class="social-link" target="_blank" aria-label="Notion">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span>Notion</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <div class="form-header">
+                            <h3>Send Message</h3>
+                            <p>I typically respond within 24 hours</p>
+                        </div>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
+                                    required>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message"
+                                    placeholder="Tell me about your project or inquiry..." rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    <span class="btn-text">Send Message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                    <div class="btn-loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                    </div>
+                                </button>
+                                <div class="form-status" id="formStatus"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <i class="fas fa-code"></i>
+                                <span>Abdullah Kamal</span>
+                            </div>
+                            <p>Full Stack .NET Developer passionate about building scalable, secure, and efficient
+                                software solutions.</p>
+                        </div>
 
-      </div>
-    </section><!-- End Projects Section -->
+                        <div class="footer-links">
+                            <div class="footer-column">
+                                <h4>Quick Links</h4>
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact">Contact</a>
+                            </div>
 
-    <!-- ======= Certificates Section ======= -->
-    <section id="certificates" class="certificates">
-      <div class="container">
+                            <div class="footer-column">
+                                <h4>Resources</h4>
+                                <a href="./assets/Abdullah_Kamal_Full_Stack_Developer_CV.pdf" download>Download CV</a>
+                                <a href="https://github.com/ak4m410x01" target="_blank">GitHub</a>
+                                <a href="https://linkedin.com/in/ak4m410x01" target="_blank">LinkedIn</a>
+                                <a href="#achievements">Achievements</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="section-title">
-          <h2>Certificates</h2>
-          <p>My Certificates</p>
-        </div>
+                    <div class="footer-bottom">
+                        <div class="footer-copyright">
+                            <p>&copy; 2024 Abdullah Kamal. All rights reserved.</p>
+                            <p>Built with <i class="fas fa-heart"></i> and .NET expertise</p>
+                        </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="certificates-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-programming">Programming</li>
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-database">Database</li>
-              <li data-filter=".filter-security">Security</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row certificates-container">
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-web">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/full_stack_web_development_using_python/cert.jpg" class="img-fluid"
-                alt="Full Stack Web Development">
-              <div class="certificates-info">
-                <h4>Full Stack Web Development</h4>
-                <p>Full Stack Web Development using Python</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/full_stack_web_development_using_python/cert.jpg"
-                    data-gallery="certificatesGallery" class="certificates-lightbox" title="Full Stack Web Development">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/full_stack_web_development_using_python/cert_page.html"
-                    data-glightbox="type: external" class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
+                        <div class="footer-back">
+                            <a href="#home" class="back-to-top">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>Back to Top</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </footer>
 
-          <div class="col-lg-4 col-md-6 certificates-item filter-web">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/the_python_and_django_learning_guide/cert.jpg" class="img-fluid"
-                alt="Python and Django">
-              <div class="certificates-info">
-                <h4>Python and Django</h4>
-                <p>The Python and Django Learning Guide</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/the_python_and_django_learning_guide/cert.jpg"
-                    data-gallery="certificatesGallery" class="certificates-lightbox" title="Python and Django">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/the_python_and_django_learning_guide/cert_page.html"
-                    data-glightbox="type: external" class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-web">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/web_development_using_django_framework/cert.jpg" class="img-fluid"
-                alt="Web Development">
-              <div class="certificates-info">
-                <h4>Web Development</h4>
-                <p>Web Development using Django Framework</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/web_development_using_django_framework/cert.jpg"
-                    data-gallery="certificatesGallery" class="certificates-lightbox" title="Web Development">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/web_development_using_django_framework/cert_page.html"
-                    data-glightbox="type: external" class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-security">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/mastering_sql_injection/cert.jpg" class="img-fluid" alt="SQL Injection">
-              <div class="certificates-info">
-                <h4>SQL Injection</h4>
-                <p>Mastering SQL Injection</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/mastering_sql_injection/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="SQL Injection">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/mastering_sql_injection/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-security">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/introduction_to_web_hacking/cert.jpg" class="img-fluid" alt="Web Hacking">
-              <div class="certificates-info">
-                <h4>Web Hacking</h4>
-                <p>Introduction to Web Hacking</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/introduction_to_web_hacking/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="Web Hacking">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/introduction_to_web_hacking/cert_page.html"
-                    data-glightbox="type: external" class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-programming">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/python_full_guide/cert.jpg" class="img-fluid" alt="Python">
-              <div class="certificates-info">
-                <h4>Python</h4>
-                <p>Python Full Guide</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/python_full_guide/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="Python">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/python_full_guide/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-programming">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/php8_learning_guide/cert.jpg" class="img-fluid" alt="PHP 8">
-              <div class="certificates-info">
-                <h4>PHP 8</h4>
-                <p>PHP 8 Learning Guide</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/php8_learning_guide/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="PHP 8">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/php8_learning_guide/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-security">
-            <div class="certificates-wrap">
-              <img src="./certificates/udemy/network_info_sec/cert.jpg" class="img-fluid" alt="Network Info Sec">
-              <div class="certificates-info">
-                <h4>Network Info Sec</h4>
-                <p>Network Info Sec</p>
-                <div class="certificates-links">
-                  <a href="./certificates/udemy/network_info_sec/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="Network Info Sec">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/udemy/network_info_sec/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-security">
-            <div class="certificates-wrap">
-              <img src="./certificates/cybertalents/introduction_to_cybersecurity/cert.jpg" class="img-fluid"
-                alt="Cyber Security">
-              <div class="certificates-info">
-                <h4>Cyber Security</h4>
-                <p>Introduction to Cyber Security</p>
-                <div class="certificates-links">
-                  <a href="./certificates/cybertalents/introduction_to_cybersecurity/cert.jpg"
-                    data-gallery="certificatesGallery" class="certificates-lightbox" title="Cyber Security">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/cybertalents/introduction_to_cybersecurity/cert.jpg"
-                    data-glightbox="type: external" class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-programming">
-            <div class="certificates-wrap">
-              <img src="./certificates/hackerrank/python_basic/cert.jpg" class="img-fluid" alt="Python">
-              <div class="certificates-info">
-                <h4>Python</h4>
-                <p>Python Programming Language</p>
-                <div class="certificates-links">
-                  <a href="./certificates/hackerrank/python_basic/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="Python">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/hackerrank/python_basic/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-database">
-            <div class="certificates-wrap">
-              <img src="./certificates/hackerrank/sql_basic/cert.jpg" class="img-fluid" alt="SQL">
-              <div class="certificates-info">
-                <h4>SQL</h4>
-                <p>Structured Query Language Basic</p>
-                <div class="certificates-links">
-                  <a href="./certificates/hackerrank/sql_basic/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="SQL">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/hackerrank/sql_basic/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 certificates-item filter-database">
-            <div class="certificates-wrap">
-              <img src="./certificates/hackerrank/sql_intermediate/cert.jpg" class="img-fluid" alt="SQL">
-              <div class="certificates-info">
-                <h4>SQL</h4>
-                <p>Structured Query Language Intermediate</p>
-                <div class="certificates-links">
-                  <a href="./certificates/hackerrank/sql_intermediate/cert.jpg" data-gallery="certificatesGallery"
-                    class="certificates-lightbox" title="sql_intermediate">
-                    <i class="bx bx-plus"></i>
-                  </a>
-                  <a href="./certificates/hackerrank/sql_intermediate/cert_page.html" data-glightbox="type: external"
-                    class="certificates-details-lightbox" title="Certificate Details">
-                    <i class="bx bx-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-    </section><!-- End Certificates Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Me</p>
-        </div>
-
-        <div class="row mt-2">
-
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>My Address</h3>
-              <p>Cairo, Egypt</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-share-alt"></i>
-              <h3>Social Profiles</h3>
-              <div class="social-links">
-                <a target="_blank" href="mailto:abdullah.kamal0x01@gmail.com" class="envelope-at-fill">
-                  <i class="bi bi-envelope-at-fill"></i>
-                </a>
-
-                <a target="_blank" href="mailto:abdullah.kamal0x01@outlook.com" class="envelope-at">
-                  <i class="bi bi-envelope-at"></i>
-                </a>
-
-                <a target="_blank" href="https://www.linkedin.com/in/ak4m410x01/" class="linkedin">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-
-                <a target="_blank" href="https://github.com/ak4m410x01/" class="github">
-                  <i class="bi bi-github"></i>
-                </a>
-
-                <a target="_blank" href="https://gitlab.com/ak4m410x01/" class="gitlab">
-                  <i class="bi bi-gitlab"></i>
-                </a>
-
-                <a target="_blank" href="https://x.com/ak4m410x01/" class="twitter">
-                  <i class="bi bi-twitter-x"></i>
-                </a>
-
-                <a target="_blank" href="https://wa.me/201040534161/" class="whatsapp">
-                  <i class="bi bi-whatsapp"> </i>
-                </a>
-
-                <a target="_blank" href="https://wa.me/201147301642/" class="whatsapp">
-                  <i class="bi bi-whatsapp"> </i>
-                </a>
-
-                <a target="_blank" href="https://t.me/ak4m410x010/" class="telegram">
-                  <i class="bi bi-telegram"> </i>
-                </a>
-
-                <a target="_blank" href="https://t.me/ak4m410x01/" class="telegram">
-                  <i class="bi bi-telegram"> </i>
-                </a>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email Me</h3>
-              <p>abdullah.kamal0x01@gmail.com</p>
-              <p>abdullah.kamal0x01@outlook.com</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-phone-call"></i>
-              <h3>Call Me</h3>
-              <p>+20 10 4053 4161</p>
-              <p>+20 11 4730 1642</p>
-            </div>
-          </div>
-        </div>
-
-        <form action method="POST" role="form" class="php-email-form mt-4">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-  </body>
-
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/navigation.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/form-handler.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
