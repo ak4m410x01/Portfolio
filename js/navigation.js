@@ -105,19 +105,15 @@ class Navigation {
   initThemeToggle() {
     if (!this.themeToggle) return;
 
-    // Load saved theme or default to light
+    // Load saved theme
     const savedTheme = localStorage.getItem("theme") || "light";
     this.setTheme(savedTheme);
 
     this.themeToggle.addEventListener("click", () => {
-      const currentTheme = document.body.classList.contains("dark-theme")
-        ? "dark"
-        : "light";
+      const currentTheme =
+        document.documentElement.getAttribute("data-theme") || "light";
       const newTheme = currentTheme === "light" ? "dark" : "light";
       this.setTheme(newTheme);
-
-      // Track theme change
-      this.trackThemeChange(newTheme);
     });
 
     // Add system theme preference detection
@@ -125,17 +121,21 @@ class Navigation {
   }
 
   setTheme(theme) {
+    // Remove existing theme
+    document.documentElement.removeAttribute("data-theme");
+
     if (theme === "dark") {
-      document.body.classList.add("dark-theme");
+      document.documentElement.setAttribute("data-theme", "dark");
       this.themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
       this.themeToggle.setAttribute("aria-label", "Switch to light theme");
       this.themeToggle.setAttribute("title", "Switch to light theme");
     } else {
-      document.body.classList.remove("dark-theme");
+      document.documentElement.setAttribute("data-theme", "light");
       this.themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
       this.themeToggle.setAttribute("aria-label", "Switch to dark theme");
       this.themeToggle.setAttribute("title", "Switch to dark theme");
     }
+
     localStorage.setItem("theme", theme);
 
     // Update meta theme color for mobile browsers
@@ -183,20 +183,7 @@ class Navigation {
     if (theme === "dark") {
       metaThemeColor.content = "#0f172a"; // Dark theme color
     } else {
-      metaThemeColor.content = "#2563eb"; // Primary color for light theme
-    }
-  }
-
-  trackThemeChange(theme) {
-    // You can add analytics tracking here
-    console.log(`Theme changed to: ${theme}`);
-
-    // Example: Google Analytics tracking
-    if (typeof gtag !== "undefined") {
-      gtag("event", "theme_change", {
-        event_category: "preferences",
-        event_label: theme,
-      });
+      metaThemeColor.content = "#ffffff"; // Light theme color
     }
   }
 
