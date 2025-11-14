@@ -800,18 +800,6 @@
   border-color: var(--primary-500);
 }
 
-.skill-category .category-header h3 {
-  color: var(--text-primary) !important;
-}
-
-.skill-category .skill-name {
-  color: var(--text-primary) !important;
-}
-
-.skill-category .skill-percentage {
-  color: var(--text-muted) !important;
-}
-
 .category-header {
   display: flex;
   align-items: center;
@@ -974,30 +962,6 @@
   border-color: var(--primary-500);
 }
 
-.timeline-content h3 {
-  color: var(--text-primary) !important;
-}
-
-.timeline-content h4 {
-  color: var(--primary-500) !important;
-}
-
-[data-theme="dark"] .timeline-content h4 {
-  color: var(--primary-400) !important;
-}
-
-.timeline-content p {
-  color: var(--text-secondary) !important;
-}
-
-.timeline-content li {
-  color: var(--text-secondary) !important;
-}
-
-.timeline-content strong {
-  color: var(--text-primary) !important;
-}
-
 .timeline-date {
   background: var(--gradient-primary);
   color: var(--white);
@@ -1113,22 +1077,6 @@
   transform: translateY(-10px);
   box-shadow: var(--shadow-lg);
   border-color: var(--primary-500);
-}
-
-.project-card h3 {
-  color: var(--text-primary) !important;
-}
-
-.project-card strong {
-  color: var(--text-primary) !important;
-}
-
-.project-card p {
-  color: var(--text-secondary) !important;
-}
-
-.project-card .project-date {
-  color: var(--text-muted) !important;
 }
 
 .project-image {
@@ -1282,22 +1230,6 @@
 
 .achievement-card:hover {
   border-color: var(--primary-500);
-}
-
-.achievement-card h3 {
-  color: var(--text-primary) !important;
-}
-
-.achievement-card strong {
-  color: var(--text-primary) !important;
-}
-
-.achievement-card p {
-  color: var(--text-secondary) !important;
-}
-
-.achievement-card .achievement-date {
-  color: var(--text-muted) !important;
 }
 
 .achievement-card::before {
@@ -1766,22 +1698,6 @@
   overflow: hidden;
 }
 
-.service-card h3 {
-  color: var(--text-primary) !important;
-}
-
-.service-card strong {
-  color: var(--text-primary) !important;
-}
-
-.service-card p {
-  color: var(--text-secondary) !important;
-}
-
-.service-card li {
-  color: var(--text-secondary) !important;
-}
-
 .service-card::before {
   content: "";
   position: absolute;
@@ -1923,7 +1839,7 @@
     gap: 0.5rem;
     border: 1px solid var(--border-primary);
   }
-  
+
   .nav-link {
     width: calc(100% - 2rem);
     margin: 0 1rem;

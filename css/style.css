@@ -154,7 +154,8 @@ section,
 .achievement-card,
 .timeline-content,
 .skill-category {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .container {
@@ -526,7 +527,8 @@ a:hover {
 }
 
 @keyframes particleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) translateX(0);
     opacity: 0.6;
   }
@@ -537,7 +539,8 @@ a:hover {
 }
 
 @keyframes logoPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
   }
@@ -568,7 +571,8 @@ a:hover {
 }
 
 @keyframes textPulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
   }
   50% {
@@ -625,6 +629,275 @@ a:hover {
   background: var(--primary-500);
   color: var(--white);
   border-color: var(--primary-500);
+}
+
+/* COMPREHENSIVE TEXT VISIBILITY FIXES */
+
+/* Ensure all text elements inherit proper colors */
+.skill-category,
+.timeline-content,
+.project-card,
+.achievement-card,
+.service-card,
+.about-content,
+.contact-info {
+  color: inherit;
+}
+
+/* Specific fixes for skill categories */
+.skill-category .category-header h3 {
+  color: var(--text-primary);
+}
+
+.skill-category .skill-name {
+  color: var(--text-primary);
+}
+
+.skill-category .skill-percentage {
+  color: var(--text-muted);
+}
+
+/* Timeline content fixes */
+.timeline-content h3 {
+  color: var(--text-primary);
+}
+
+.timeline-content h4 {
+  color: var(--primary-500);
+}
+
+[data-theme="dark"] .timeline-content h4 {
+  color: var(--primary-400);
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+}
+
+.timeline-content li {
+  color: var(--text-secondary);
+}
+
+.timeline-content strong {
+  color: var(--text-primary);
+}
+
+/* Project card fixes */
+.project-card h3 {
+  color: var(--text-primary);
+}
+
+.project-card strong {
+  color: var(--text-primary);
+}
+
+.project-card p {
+  color: var(--text-secondary);
+}
+
+.project-card .project-date {
+  color: var(--text-muted);
+}
+
+/* Achievement card fixes */
+.achievement-card h3 {
+  color: var(--text-primary);
+}
+
+.achievement-card strong {
+  color: var(--text-primary);
+}
+
+.achievement-card p {
+  color: var(--text-secondary);
+}
+
+.achievement-card .achievement-date {
+  color: var(--text-muted);
+}
+
+/* Service card fixes */
+.service-card h3 {
+  color: var(--text-primary);
+}
+
+.service-card strong {
+  color: var(--text-primary);
+}
+
+.service-card p {
+  color: var(--text-secondary);
+}
+
+.service-card li {
+  color: var(--text-secondary);
+}
+
+/* Stack section fixes */
+.stack-category h4 {
+  color: var(--text-primary);
+}
+
+.stack-item {
+  color: var(--text-secondary);
+}
+
+/* Philosophy items */
+.philosophy-item h5 {
+  color: var(--text-primary);
+}
+
+.philosophy-item p {
+  color: var(--text-secondary);
+}
+
+/* Detail items */
+.detail-item strong {
+  color: var(--text-primary);
+}
+
+.detail-item span {
+  color: var(--text-secondary);
+}
+
+.detail-item small {
+  color: var(--text-muted);
+}
+
+/* Impact items */
+.impact-item {
+  color: var(--success);
+}
+
+/* Profile links */
+.profile-link {
+  color: var(--text-primary);
+}
+
+.profile-link span {
+  color: inherit;
+}
+
+.profile-link small {
+  color: var(--text-muted);
+}
+
+/* Social links */
+.social-link {
+  color: var(--text-inverse);
+}
+
+.social-link span {
+  color: inherit;
+}
+
+/* Contact details */
+.contact-details a {
+  color: var(--gray-300);
+}
+
+.contact-details span {
+  color: var(--gray-400);
+}
+
+/* Form elements */
+.contact-form label {
+  color: var(--text-inverse);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer fixes */
+.footer-brand p {
+  color: var(--gray-400);
+}
+
+.footer-column a {
+  color: var(--gray-400);
+}
+
+.footer-copyright p {
+  color: var(--gray-400);
+}
+
+.back-to-top {
+  color: var(--gray-400);
+}
+
+/* Hero section specific fixes */
+.hero-badge {
+  color: var(--text-inverse);
+}
+
+.hero-tag {
+  color: var(--text-inverse);
+}
+
+.hero-description {
+  color: var(--gray-300);
+}
+
+.hero-description strong {
+  color: var(--text-inverse);
+}
+
+.stat-label {
+  color: var(--gray-300);
+}
+
+/* About section specific fixes */
+.about-intro h3 {
+  color: var(--text-primary);
+}
+
+.about-intro p {
+  color: var(--text-secondary);
+}
+
+.about-intro strong {
+  color: var(--text-primary);
+}
+
+.about-philosophy h4 {
+  color: var(--text-primary);
+}
+
+/* Universal text color inheritance */
+* {
+  color: inherit;
+}
+
+/* Force color inheritance for all text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+small,
+strong,
+em,
+a,
+li,
+td,
+th,
+label,
+input,
+textarea,
+select {
+  color: inherit;
+}
+
+/* Specific container fixes */
+.container,
+section,
+div {
+  color: inherit;
 }
 
 /* Responsive Design */

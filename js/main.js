@@ -20,11 +20,11 @@ class PortfolioApp {
     const progressInterval = setInterval(() => {
       progress += Math.random() * 15;
       if (progress > 100) progress = 100;
-      
+
       if (progressFill) {
         progressFill.style.width = progress + "%";
       }
-      
+
       if (progressText) {
         if (progress < 30) {
           progressText.textContent = "Loading assets...";
@@ -39,7 +39,7 @@ class PortfolioApp {
 
       if (progress >= 100) {
         clearInterval(progressInterval);
-        
+
         // Fade out loading screen
         setTimeout(() => {
           loadingScreen.style.opacity = "0";
@@ -104,7 +104,6 @@ class PortfolioApp {
 
       // Add error handling
       img.addEventListener("error", () => {
-        console.warn("Image failed to load:", img.src);
         img.style.display = "none";
       });
     });
@@ -142,7 +141,6 @@ class PortfolioApp {
         // You can register a service worker here for offline functionality
         // await navigator.serviceWorker.register('/sw.js');
       } catch (error) {
-        console.log("Service Worker registration failed:", error);
       }
     }
   }
@@ -174,7 +172,6 @@ class PortfolioApp {
       const observer = new PerformanceObserver((list) => {
         for (const entry of list.getEntries()) {
           if (entry.duration > 50) {
-            console.warn("Long task detected:", entry);
           }
         }
       });
@@ -187,7 +184,6 @@ class PortfolioApp {
       const observer = new PerformanceObserver((list) => {
         const entries = list.getEntries();
         const lastEntry = entries[entries.length - 1];
-        console.log("LCP:", lastEntry.startTime);
       });
 
       observer.observe({ entryTypes: ["largest-contentful-paint"] });
@@ -220,7 +216,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Error boundary for the application
 window.addEventListener("error", (event) => {
-  console.error("Application error:", event.error);
 
   // You can send errors to your error tracking service here
   // Example: Sentry, LogRocket, etc.
