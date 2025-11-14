@@ -12,14 +12,44 @@ class PortfolioApp {
 
   initLoadingScreen() {
     const loadingScreen = document.getElementById("loadingScreen");
+    const progressFill = document.querySelector(".progress-fill");
+    const progressText = document.querySelector(".progress-text");
 
-    // Simulate loading time
-    setTimeout(() => {
-      loadingScreen.style.opacity = "0";
-      setTimeout(() => {
-        loadingScreen.style.display = "none";
-      }, 500);
-    }, 1500);
+    // Animate progress
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+      progress += Math.random() * 15;
+      if (progress > 100) progress = 100;
+      
+      if (progressFill) {
+        progressFill.style.width = progress + "%";
+      }
+      
+      if (progressText) {
+        if (progress < 30) {
+          progressText.textContent = "Loading assets...";
+        } else if (progress < 60) {
+          progressText.textContent = "Initializing components...";
+        } else if (progress < 90) {
+          progressText.textContent = "Almost ready...";
+        } else {
+          progressText.textContent = "Welcome!";
+        }
+      }
+
+      if (progress >= 100) {
+        clearInterval(progressInterval);
+        
+        // Fade out loading screen
+        setTimeout(() => {
+          loadingScreen.style.opacity = "0";
+          loadingScreen.style.visibility = "hidden";
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+          }, 600);
+        }, 300);
+      }
+    }, 100);
   }
 
   initApp() {

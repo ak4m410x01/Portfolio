@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdullah Kamal - Full Stack .NET Developer</title>
-    <meta
-      name="description"
-      content="Full Stack .NET Developer with 2+ years experience in enterprise applications, cloud solutions, and scalable software architecture"
-    />
-    <meta
-      name="keywords"
-      content=".NET Developer, Full Stack Developer, C#, ASP.NET, Cloud Architecture, Software Engineer"
-    />
+    <meta name="description"
+      content="Full Stack .NET Developer with 2+ years experience in enterprise applications, cloud solutions, and scalable software architecture" />
+    <meta name="keywords"
+      content=".NET Developer, Full Stack Developer, C#, ASP.NET, Cloud Architecture, Software Engineer" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/components.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   </head>
 
   <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
+      <div class="loading-background">
+        <div class="loading-gradient"></div>
+        <div class="loading-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+      </div>
       <div class="loading-content">
-        <div class="loading-spinner"></div>
-        <p>Initializing Portfolio...</p>
+        <div class="loading-logo">
+          <div class="logo-loader">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="logo-pulse"></div>
+        </div>
+        <div class="loading-text">
+          <h2 class="loading-title">Abdullah Kamal</h2>
+          <p class="loading-subtitle">Full Stack .NET Developer</p>
+        </div>
+        <div class="loading-progress">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="progress-text">Loading...</span>
+        </div>
       </div>
     </div>
 
@@ -68,6 +81,9 @@
             <a href="#projects" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
             <a href="#achievements" class="nav-link">Achievements</a>
           </li>
           <li class="nav-item">
@@ -76,11 +92,7 @@
         </ul>
 
         <div class="nav-actions">
-          <button
-            class="theme-toggle"
-            id="themeToggle"
-            aria-label="Toggle theme"
-          >
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
             <i class="fas fa-moon"></i>
           </button>
           <div class="nav-toggle" id="navToggle">
@@ -125,11 +137,17 @@
               </h2>
             </div>
 
+            <div class="hero-tags">
+              <span class="hero-tag">Full Stack Developer</span>
+              <span class="hero-tag">.NET Expert</span>
+              <span class="hero-tag">Cloud Architect</span>
+            </div>
+
             <p class="hero-description">
-              I design and build
-              <strong>scalable .NET applications</strong> that are secure,
-              cloud-ready, and built to last. Specializing in enterprise
-              solutions, clean architecture, and high-performance systems.
+              Enterprise Full Stack .NET Developer with proven expertise in building
+              <strong>mission-critical systems</strong> for Fortune 500 companies and government organizations.
+              Specializing in <strong>scalable cloud architectures</strong>, <strong>microservices</strong>, and
+              <strong>enterprise-grade solutions</strong> that drive business value and operational excellence.
             </p>
 
             <div class="hero-stats">
@@ -156,11 +174,8 @@
                 <span>Get In Touch</span>
                 <i class="fas fa-paper-plane"></i>
               </a>
-              <a
-                href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
-                class="btn btn-outline"
-                download
-              >
+              <a href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view" class="btn btn-outline"
+                download>
                 <span>Download CV</span>
                 <i class="fas fa-download"></i>
               </a>
@@ -169,11 +184,8 @@
 
           <div class="hero-visual">
             <div class="profile-image-container">
-              <img
-                src="./assets/formal_profile_img.jpg"
-                alt="Abdullah Kamal - Full Stack .NET Developer"
-                class="profile-image"
-              />
+              <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal - Full Stack .NET Developer"
+                class="profile-image" />
               <div class="profile-frame"></div>
               <div class="profile-tech-badge">
                 <i class="fab fa-microsoft"></i>
@@ -206,20 +218,37 @@
         <div class="about-content">
           <div class="about-text" data-aos="fade-right">
             <div class="about-intro">
-              <h3>Transforming Ideas into Scalable Solutions</h3>
+              <h3>Enterprise Software Engineer | Driving Digital Transformation</h3>
               <p>
-                I'm a <strong>Full Stack .NET Developer</strong> with
-                <strong>2+ years</strong> of professional experience
-                specializing in enterprise-grade applications. My expertise lies
-                in transforming complex business requirements into reliable,
-                secure, and maintainable software solutions.
+                I'm an accomplished <strong>Full Stack .NET Developer</strong> with
+                <strong>2+ years</strong> of enterprise experience architecting and delivering mission-critical
+                software solutions for large-scale organizations. My expertise spans from competitive programming
+                excellence (ICPC 2022 Finalist - Top 21/300+ teams) to production-grade enterprise systems handling
+                sensitive data and high-traffic workloads.
               </p>
               <p>
-                With a strong foundation in
-                <strong>competitive programming</strong> and hands-on experience
-                with <strong>mission-critical systems</strong>, I bring a unique
-                combination of algorithmic thinking and practical software
-                engineering to every project.
+                Currently serving as a <strong>Full Stack Developer</strong> for the <strong>Egyptian Armed
+                  Forces</strong>,
+                I design and maintain high-availability defense systems requiring military-grade security and 99.9%
+                uptime.
+                Simultaneously, I lead ERP transformation initiatives at <strong>National Quality Stores
+                  Foundation</strong>,
+                optimizing database performance by 25% and implementing scalable microservices architectures.
+              </p>
+              <p>
+                My technical leadership is demonstrated through expertise in <strong>Clean Architecture</strong>,
+                <strong>Microservices</strong>, <strong>CQRS</strong>, and <strong>Domain-Driven Design</strong>.
+                I consistently deliver measurable business impact—improving API response times by 20-30%, reducing
+                production bugs by 15%, and automating workflows that increase operational efficiency by 40%.
+                My security-first approach ensures enterprise-grade protection with JWT authentication, RBAC,
+                and secure payment gateway integrations.
+              </p>
+              <p>
+                Beyond technical execution, I'm a recognized <strong>technical leader</strong> and
+                <strong>mentor</strong>,
+                having guided 1000+ students in programming fundamentals and best practices. This combination of
+                hands-on engineering excellence and leadership experience positions me to drive innovation and
+                technical excellence in enterprise environments.
               </p>
             </div>
 
@@ -243,6 +272,15 @@
                 <div>
                   <strong>Education</strong>
                   <span>B.Sc. Computer Science</span>
+                  <small>Sohag University (2020-2024)</small>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-certificate"></i>
+                <div>
+                  <strong>Certification</strong>
+                  <span>.NET Developer Program</span>
+                  <small>Digital Egypt Pioneers Initiative (DEPI) 2024</small>
                 </div>
               </div>
             </div>
@@ -276,11 +314,7 @@
 
           <div class="about-image" data-aos="fade-left">
             <div class="image-container">
-              <img
-                src="./assets/formal_profile_img.jpg"
-                alt="Abdullah Kamal"
-                class="main-profile-image"
-              />
+              <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal" class="main-profile-image" />
               <div class="image-frame"></div>
               <div class="floating-tech">
                 <span class="tech-tag">.NET Core</span>
@@ -446,37 +480,90 @@
 
         <!-- Technology Stack -->
         <div class="tech-stack-section" data-aos="fade-up">
-          <h3>Technology Stack</h3>
+          <h3>Comprehensive Technology Stack</h3>
           <div class="stack-grid">
             <div class="stack-category">
-              <h4>Backend Technologies</h4>
+              <h4><i class="fas fa-server"></i> Backend & .NET Ecosystem</h4>
               <div class="stack-items">
+                <span class="stack-item">C#</span>
+                <span class="stack-item">.NET Framework 4.x</span>
+                <span class="stack-item">.NET 6/7/8/9/10</span>
                 <span class="stack-item">ASP.NET Core</span>
-                <span class="stack-item">Entity Framework</span>
+                <span class="stack-item">Web API</span>
+                <span class="stack-item">MVC</span>
+                <span class="stack-item">Minimal APIs</span>
+                <span class="stack-item">Entity Framework Core</span>
                 <span class="stack-item">Dapper</span>
+                <span class="stack-item">LINQ</span>
                 <span class="stack-item">SignalR</span>
                 <span class="stack-item">gRPC</span>
-                <span class="stack-item">Redis</span>
+                <span class="stack-item">MediatR</span>
+                <span class="stack-item">AutoMapper</span>
+                <span class="stack-item">FluentValidation</span>
               </div>
             </div>
             <div class="stack-category">
-              <h4>Frontend Technologies</h4>
+              <h4><i class="fas fa-code"></i> Frontend Development</h4>
               <div class="stack-items">
                 <span class="stack-item">HTML5</span>
                 <span class="stack-item">CSS3</span>
-                <span class="stack-item">JavaScript</span>
                 <span class="stack-item">Bootstrap</span>
+                <span class="stack-item">JavaScript</span>
                 <span class="stack-item">jQuery</span>
+                <span class="stack-item">Ajax</span>
+                <span class="stack-item">Razor Pages</span>
+                <span class="stack-item">Blazor</span>
+                <span class="stack-item">React</span>
+                <span class="stack-item">TypeScript</span>
+                <span class="stack-item">Responsive Design</span>
               </div>
             </div>
             <div class="stack-category">
-              <h4>Tools & DevOps</h4>
+              <h4><i class="fas fa-database"></i> Databases & Caching</h4>
               <div class="stack-items">
-                <span class="stack-item">Git & GitHub</span>
+                <span class="stack-item">SQL Server</span>
+                <span class="stack-item">PostgreSQL</span>
+                <span class="stack-item">MySQL</span>
+                <span class="stack-item">Redis</span>
+                <span class="stack-item">MongoDB</span>
+                <span class="stack-item">Query Optimization</span>
+                <span class="stack-item">Stored Procedures</span>
+              </div>
+            </div>
+            <div class="stack-category">
+              <h4><i class="fas fa-cloud"></i> DevOps & Cloud</h4>
+              <div class="stack-items">
                 <span class="stack-item">Docker</span>
-                <span class="stack-item">Azure DevOps</span>
-                <span class="stack-item">Postman</span>
-                <span class="stack-item">Visual Studio</span>
+                <span class="stack-item">Docker Compose</span>
+                <span class="stack-item">Kubernetes</span>
+                <span class="stack-item">Azure</span>
+                <span class="stack-item">AWS</span>
+                <span class="stack-item">GitHub Actions</span>
+                <span class="stack-item">CI/CD Pipelines</span>
+                <span class="stack-item">NGINX</span>
+              </div>
+            </div>
+            <div class="stack-category">
+              <h4><i class="fas fa-shield-alt"></i> Security & Identity</h4>
+              <div class="stack-items">
+                <span class="stack-item">JWT Tokens</span>
+                <span class="stack-item">OAuth 2.0</span>
+                <span class="stack-item">ASP.NET Core Identity</span>
+                <span class="stack-item">RBAC</span>
+                <span class="stack-item">Policy-Based Authorization</span>
+                <span class="stack-item">Data Encryption</span>
+              </div>
+            </div>
+            <div class="stack-category">
+              <h4><i class="fas fa-sitemap"></i> Architecture & Patterns</h4>
+              <div class="stack-items">
+                <span class="stack-item">Clean Architecture</span>
+                <span class="stack-item">Microservices</span>
+                <span class="stack-item">CQRS</span>
+                <span class="stack-item">Mediator Pattern</span>
+                <span class="stack-item">Repository Pattern</span>
+                <span class="stack-item">SOLID Principles</span>
+                <span class="stack-item">DDD</span>
               </div>
             </div>
           </div>
@@ -499,7 +586,7 @@
           <!-- Egyptian Armed Forces -->
           <div class="timeline-item" data-aos="fade-right">
             <div class="timeline-content">
-              <div class="timeline-date">2025 - Present</div>
+              <div class="timeline-date">05/2025 – 10/2025</div>
               <div class="timeline-icon">
                 <i class="fas fa-shield-alt"></i>
               </div>
@@ -507,22 +594,20 @@
                 <h3>Full Stack Developer</h3>
                 <h4>Egyptian Armed Forces</h4>
                 <p>
-                  Design, develop, and maintain mission-critical systems with
-                  focus on security, reliability, and high performance for
-                  national defense operations. Implement robust security
-                  protocols and ensure system integrity.
+                  <strong>Mission-Critical Defense Systems</strong> - Architecting and maintaining high-availability
+                  systems for national security operations. Designed and implemented secure, scalable solutions handling
+                  sensitive defense data.
                 </p>
                 <ul class="timeline-responsibilities">
                   <li>
-                    Develop secure, scalable applications for defense operations
+                    Designed and implemented secure, scalable solutions handling sensitive defense data
                   </li>
                   <li>
-                    Implement robust authentication and authorization systems
+                    Established robust security protocols and real-time monitoring systems
                   </li>
-                  <li>Optimize system performance and ensure 99.9% uptime</li>
+                  <li>Developed comprehensive disaster recovery and business continuity procedures</li>
                   <li>
-                    Collaborate with cross-functional teams on system
-                    architecture
+                    Ensured system reliability through rigorous testing and quality assurance processes
                   </li>
                 </ul>
                 <div class="timeline-tech">
@@ -538,7 +623,7 @@
           <!-- National Quality Stores -->
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
-              <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-date">10/2024 - Present</div>
               <div class="timeline-icon">
                 <i class="fas fa-building"></i>
               </div>
@@ -546,24 +631,26 @@
                 <h3>Full Stack Developer</h3>
                 <h4>National Quality Stores Foundation</h4>
                 <p>
-                  Lead development of comprehensive ERP systems, implementing
-                  scalable architectures and optimizing database performance for
-                  enterprise operations across multiple departments.
+                  <strong>Enterprise ERP Transformation</strong> - Enhancing large-scale ERP systems serving multiple
+                  business units. Optimized database performance, reducing query times by 25% through strategic indexing
+                  and query optimization.
                 </p>
                 <ul class="timeline-responsibilities">
                   <li>
-                    Architect and develop ERP modules for finance, HR, and
-                    inventory
+                    Optimized database performance, reducing query times by 25% through strategic indexing and query
+                    optimization
                   </li>
-                  <li>Optimize SQL queries and database performance</li>
-                  <li>Implement role-based access control systems</li>
-                  <li>Integrate third-party APIs and payment gateways</li>
+                  <li>Implemented comprehensive role-based access control across financial, HR, and inventory modules
+                  </li>
+                  <li>Containerized applications using Docker, improving deployment consistency and scalability</li>
+                  <li>Developed real-time reporting dashboards enhancing cross-department decision-making</li>
                 </ul>
                 <div class="timeline-tech">
                   <span class="tech-tag">ASP.NET Core</span>
                   <span class="tech-tag">ERP Systems</span>
                   <span class="tech-tag">SQL Server</span>
                   <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">Docker</span>
                 </div>
               </div>
             </div>
@@ -572,7 +659,7 @@
           <!-- Soft Forte -->
           <div class="timeline-item" data-aos="fade-right">
             <div class="timeline-content">
-              <div class="timeline-date">2024 - 2025</div>
+              <div class="timeline-date">09/2024 – 04/2025</div>
               <div class="timeline-icon">
                 <i class="fas fa-laptop-code"></i>
               </div>
@@ -580,21 +667,23 @@
                 <h3>.NET Developer</h3>
                 <h4>Soft Forte</h4>
                 <p>
-                  Developed custom web applications with focus on security,
-                  maintainability, and performance. Collaborated with clients to
-                  understand requirements and deliver tailored solutions.
+                  <strong>Custom Business Applications</strong> - Building performant, secure web applications for
+                  diverse client needs. Applied Clean Architecture and CQRS patterns, significantly improving code
+                  maintainability and testability.
                 </p>
                 <ul class="timeline-responsibilities">
-                  <li>Built custom web applications using ASP.NET Core</li>
-                  <li>Implemented secure authentication systems</li>
-                  <li>Optimized application performance and scalability</li>
-                  <li>Conducted code reviews and implemented best practices</li>
+                  <li>Applied Clean Architecture and CQRS patterns, significantly improving code maintainability and
+                    testability</li>
+                  <li>Introduced comprehensive unit testing practices, reducing production bugs by 15%</li>
+                  <li>Successfully integrated multiple third-party APIs and payment gateways with robust error handling
+                  </li>
+                  <li>Implemented responsive front-end designs ensuring optimal user experience across devices</li>
                 </ul>
                 <div class="timeline-tech">
                   <span class="tech-tag">C#</span>
-                  <span class="tech-tag">Web Applications</span>
-                  <span class="tech-tag">Security</span>
-                  <span class="tech-tag">Performance</span>
+                  <span class="tech-tag">Clean Architecture</span>
+                  <span class="tech-tag">CQRS</span>
+                  <span class="tech-tag">Unit Testing</span>
                 </div>
               </div>
             </div>
@@ -603,24 +692,24 @@
           <!-- Upwork Freelance -->
           <div class="timeline-item" data-aos="fade-left">
             <div class="timeline-content">
-              <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-date">07/2024 – Present</div>
               <div class="timeline-icon">
                 <i class="fas fa-rocket"></i>
               </div>
               <div class="timeline-text">
-                <h3>Freelance Back-End Developer</h3>
+                <h3>Back-End Developer (Freelance)</h3>
                 <h4>Upwork</h4>
                 <p>
-                  Deliver custom .NET solutions for international clients,
-                  resolving performance bottlenecks and integrating third-party
-                  services to meet diverse business needs.
+                  <strong>International Client Solutions</strong> - Delivering custom .NET Core solutions for global
+                  clients. Built scalable RESTful APIs with comprehensive documentation and testing coverage.
                 </p>
                 <ul class="timeline-responsibilities">
-                  <li>Develop RESTful APIs and backend services</li>
-                  <li>Integrate third-party services and payment systems</li>
-                  <li>Optimize database performance and query efficiency</li>
+                  <li>Built scalable RESTful APIs with comprehensive documentation and testing coverage</li>
+                  <li>Resolved critical system issues, significantly improving application stability and performance
+                  </li>
+                  <li>Provided technical consulting on architecture decisions and technology stack selection</li>
                   <li>
-                    Provide technical consulting and solution architecture
+                    Ensured client satisfaction through clear communication and timely delivery
                   </li>
                 </ul>
                 <div class="timeline-tech">
@@ -652,10 +741,8 @@
             <div class="project-image">
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="project-link" aria-label="Source Code">
+                  <a href="https://github.com/ak4m410x01/ERP-Systems" class="project-link" aria-label="Source Code"
+                    target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
@@ -664,13 +751,13 @@
             </div>
             <div class="project-content">
               <div class="project-header">
-                <h3>Enterprise ERP System</h3>
-                <span class="project-date">2025 - Present</span>
+                <h3>Enterprise ERP Systems</h3>
+                <span class="project-date">2024 - Present</span>
               </div>
               <p>
-                Comprehensive enterprise resource planning solution streamlining
-                finance, HR, inventory, and sales operations with advanced
-                role-based access control and real-time analytics.
+                Comprehensive ERP solutions streamlining finance, HR, inventory, and sales operations across multiple
+                departments. Implemented sophisticated role-based access control with granular permissions and audit
+                trails.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">ASP.NET Core</span>
@@ -678,6 +765,7 @@
                 <span class="tech-tag">Redis</span>
                 <span class="tech-tag">Docker</span>
                 <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Clean Architecture</span>
               </div>
               <div class="project-impact">
                 <div class="impact-item">
@@ -697,10 +785,8 @@
             <div class="project-image">
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="project-link" aria-label="Source Code">
+                  <a href="https://github.com/ak4m410x01/ROCSystem" class="project-link" aria-label="Source Code"
+                    target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
@@ -713,24 +799,25 @@
                 <span class="project-date">2025</span>
               </div>
               <p>
-                Management system for Egyptian Reserve Officers College handling
-                internal office operations, administrative workflows, and secure
-                document management with advanced access controls.
+                Reserve Officers College System - Secure, multi-tenant .NET applications for Egyptian Reserve Officers
+                College administrative operations. Streamlined complex administrative workflows, reducing processing
+                time by 35%.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">SQL Server</span>
-                <span class="tech-tag">Identity</span>
+                <span class="tech-tag">MVC</span>
+                <span class="tech-tag">Entity Framework</span>
                 <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">RBAC</span>
               </div>
               <div class="project-impact">
                 <div class="impact-item">
                   <i class="fas fa-users"></i>
-                  <span>Streamlined Workflows</span>
+                  <span>35% Time Reduction</span>
                 </div>
                 <div class="impact-item">
                   <i class="fas fa-shield-alt"></i>
-                  <span>Enhanced Security</span>
+                  <span>Military-Grade Security</span>
                 </div>
               </div>
             </div>
@@ -741,10 +828,8 @@
             <div class="project-image">
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="project-link" aria-label="Source Code">
+                  <a href="https://github.com/ak4m410x01/LBSNEE" class="project-link" aria-label="Source Code"
+                    target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
@@ -757,24 +842,24 @@
                 <span class="project-date">2024</span>
               </div>
               <p>
-                Localized shopping API enabling customers to connect with
-                clothing stores, featuring Redis caching, Dockerized deployment,
-                and load balancing for high performance.
+                Localized E-Commerce API connecting customers with local clothing retailers. Engineered high-performance
+                shopping API with advanced Redis caching strategies achieving 30% improvement in API response times.
               </p>
               <div class="project-tech">
-                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">ASP.NET Core Web API</span>
                 <span class="tech-tag">Redis</span>
                 <span class="tech-tag">Docker</span>
+                <span class="tech-tag">PostgreSQL</span>
                 <span class="tech-tag">Load Balancing</span>
               </div>
               <div class="project-impact">
                 <div class="impact-item">
                   <i class="fas fa-bolt"></i>
-                  <span>High Performance</span>
+                  <span>30% Performance Boost</span>
                 </div>
                 <div class="impact-item">
                   <i class="fas fa-expand"></i>
-                  <span>Scalable Architecture</span>
+                  <span>Microservices Architecture</span>
                 </div>
               </div>
             </div>
@@ -785,10 +870,8 @@
             <div class="project-image">
               <div class="project-overlay">
                 <div class="project-links">
-                  <a href="#" class="project-link" aria-label="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                  <a href="#" class="project-link" aria-label="Source Code">
+                  <a href="https://github.com/ak4m410x01/Sakany" class="project-link" aria-label="Source Code"
+                    target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
@@ -801,16 +884,17 @@
                 <span class="project-date">2024</span>
               </div>
               <p>
-                Real estate API connecting customers with realtors for renting
-                and buying properties, featuring JWT authentication, Twilio
-                integration, and CQRS pattern implementation.
+                Real Estate Platform API facilitating property renting, buying, and management. Implemented secure JWT
+                authentication with refresh tokens and integrated Twilio for SMS notifications and appointment
+                scheduling.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">ASP.NET Core</span>
-                <span class="tech-tag">EF Core</span>
-                <span class="tech-tag">CQRS</span>
                 <span class="tech-tag">JWT</span>
                 <span class="tech-tag">Twilio</span>
+                <span class="tech-tag">CQRS</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Dapper</span>
               </div>
               <div class="project-impact">
                 <div class="impact-item">
@@ -824,17 +908,270 @@
               </div>
             </div>
           </div>
+
+          <!-- E-Commerce API -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ak4m410x01/ECommerceAPI" class="project-link" aria-label="Source Code"
+                    target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>E-Commerce API</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>
+                Full E-Commerce Solution supporting complex cart, order, and payment workflows. Integrated multiple
+                payment gateways (Stripe, PayPal) with secure transaction processing and OTP verification.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">Payment Integration</span>
+                <span class="tech-tag">OTP</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Microservices</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-credit-card"></i>
+                  <span>Payment Gateways</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>2FA Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Examination Platform -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="500">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ak4m410x01/Examination-Platform" class="project-link"
+                    aria-label="Source Code" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Examination Platform</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>
+                Secure Online Assessment System with Docker-based code execution isolation. Implemented real-time
+                proctoring features and plagiarism detection mechanisms ensuring academic integrity.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Isolated Execution</span>
+                <span class="tech-tag">Real-time Monitoring</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-lock"></i>
+                  <span>Secure Execution</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-eye"></i>
+                  <span>Real-time Proctoring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gym Management -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="600">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/ak4m410x01/Gym-Management" class="project-link" aria-label="Source Code"
+                    target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Gym Management Application</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>
+                Fitness Center Management System with multi-level role-based access control. Implemented membership
+                management with automated billing, renewal notifications, and scheduling system for classes and training
+                sessions.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">RBAC</span>
+                <span class="tech-tag">Scheduling</span>
+                <span class="tech-tag">Membership Management</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-users"></i>
+                  <span>Member Management</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-calendar"></i>
+                  <span>Automated Scheduling</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="projects-cta" data-aos="fade-up">
           <p>Interested in seeing more projects?</p>
-          <a
-            href="https://github.com/ak4m410x01"
-            class="btn btn-primary"
-            target="_blank"
-          >
+          <a href="https://github.com/ak4m410x01" class="btn btn-primary" target="_blank">
             <span>View GitHub Profile</span>
             <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Services I Provide</h2>
+          <p class="section-subtitle">
+            Comprehensive software development services tailored to your business needs
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Web Application Development -->
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Web Application Development</h3>
+            <p>
+              Build scalable, secure, and high-performance web applications using ASP.NET Core,
+              following Clean Architecture principles and best practices.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Full Stack Development</li>
+              <li><i class="fas fa-check"></i> RESTful API Design</li>
+              <li><i class="fas fa-check"></i> Responsive UI/UX</li>
+              <li><i class="fas fa-check"></i> Performance Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Enterprise Solutions -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Enterprise Solutions</h3>
+            <p>
+              Design and implement enterprise-grade systems including ERP, CRM, and custom business
+              applications with robust security and scalability.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> ERP/CRM Systems</li>
+              <li><i class="fas fa-check"></i> Microservices Architecture</li>
+              <li><i class="fas fa-check"></i> Database Design & Optimization</li>
+              <li><i class="fas fa-check"></i> Integration Services</li>
+            </ul>
+          </div>
+
+          <!-- API Development -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>API Development & Integration</h3>
+            <p>
+              Create high-performance RESTful APIs with comprehensive documentation,
+              third-party integrations, and payment gateway implementations.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> RESTful API Design</li>
+              <li><i class="fas fa-check"></i> Third-party Integrations</li>
+              <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
+              <li><i class="fas fa-check"></i> API Documentation</li>
+            </ul>
+          </div>
+
+          <!-- Cloud & DevOps -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud & DevOps</h3>
+            <p>
+              Deploy and manage applications on cloud platforms with Docker, Kubernetes,
+              and CI/CD pipelines for seamless deployment and scaling.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Docker & Kubernetes</li>
+              <li><i class="fas fa-check"></i> Azure & AWS Deployment</li>
+              <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+              <li><i class="fas fa-check"></i> Infrastructure as Code</li>
+            </ul>
+          </div>
+
+          <!-- Database Solutions -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Database Design & Optimization</h3>
+            <p>
+              Design efficient database schemas, optimize queries, implement caching strategies,
+              and ensure data integrity and performance.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Database Design</li>
+              <li><i class="fas fa-check"></i> Query Optimization</li>
+              <li><i class="fas fa-check"></i> Redis Caching</li>
+              <li><i class="fas fa-check"></i> Data Migration</li>
+            </ul>
+          </div>
+
+          <!-- Consulting & Architecture -->
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+              <i class="fas fa-chess"></i>
+            </div>
+            <h3>Technical Consulting</h3>
+            <p>
+              Provide expert guidance on architecture decisions, technology stack selection,
+              code reviews, and best practices for scalable software solutions.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Architecture Design</li>
+              <li><i class="fas fa-check"></i> Code Reviews</li>
+              <li><i class="fas fa-check"></i> Technology Consulting</li>
+              <li><i class="fas fa-check"></i> Performance Audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta" data-aos="fade-up">
+          <h3>Ready to Start Your Project?</h3>
+          <p>Let's discuss how I can help bring your ideas to life</p>
+          <a href="#contact" class="btn btn-primary">
+            <span>Get In Touch</span>
+            <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -906,38 +1243,22 @@
         <div class="coding-profiles" data-aos="fade-up">
           <h3>Coding Profiles</h3>
           <div class="profiles-grid">
-            <a
-              href="https://github.com/ak4m410x01"
-              class="profile-link"
-              target="_blank"
-            >
+            <a href="https://github.com/ak4m410x01" class="profile-link" target="_blank">
               <i class="fab fa-github"></i>
               <span>GitHub</span>
               <small>ak4m410x01</small>
             </a>
-            <a
-              href="https://leetcode.com/u/ak4m410x01"
-              class="profile-link"
-              target="_blank"
-            >
+            <a href="https://leetcode.com/u/ak4m410x01" class="profile-link" target="_blank">
               <i class="fas fa-code"></i>
               <span>LeetCode</span>
               <small>ak4m410x01</small>
             </a>
-            <a
-              href="https://codeforces.com/profile/ak4m410x01"
-              class="profile-link"
-              target="_blank"
-            >
+            <a href="https://codeforces.com/profile/ak4m410x01" class="profile-link" target="_blank">
               <i class="fas fa-chart-line"></i>
               <span>CodeForces</span>
               <small>ak4m410x01</small>
             </a>
-            <a
-              href="https://icpc.global/ICPCID/RYCWA1HDIYZ3"
-              class="profile-link"
-              target="_blank"
-            >
+            <a href="https://icpc.global/ICPCID/RYCWA1HDIYZ3" class="profile-link" target="_blank">
               <i class="fas fa-trophy"></i>
               <span>ICPC Global</span>
               <small>Official Profile</small>
@@ -975,12 +1296,8 @@
                 </div>
                 <div class="contact-details">
                   <h4>Email</h4>
-                  <a href="mailto:abdullah.kamal0x01@gmail.com"
-                    >abdullah.kamal0x01@gmail.com</a
-                  >
-                  <a href="mailto:abdullah.kamal0x01@outlook.com"
-                    >abdullah.kamal0x01@outlook.com</a
-                  >
+                  <a href="mailto:abdullah.kamal0x01@gmail.com">abdullah.kamal0x01@gmail.com</a>
+                  <a href="mailto:abdullah.kamal0x01@outlook.com">abdullah.kamal0x01@outlook.com</a>
                 </div>
               </div>
 
@@ -1010,57 +1327,28 @@
             <div class="social-links">
               <h4>Follow Me</h4>
               <div class="social-grid">
-                <a
-                  href="https://linkedin.com/in/ak4m410x01"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                >
+                <a href="https://linkedin.com/in/ak4m410x01" class="social-link" target="_blank" aria-label="LinkedIn">
                   <i class="fab fa-linkedin-in"></i>
                   <span>LinkedIn</span>
                 </a>
-                <a
-                  href="https://github.com/ak4m410x01"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="GitHub"
-                >
+                <a href="https://github.com/ak4m410x01" class="social-link" target="_blank" aria-label="GitHub">
                   <i class="fab fa-github"></i>
                   <span>GitHub</span>
                 </a>
-                <a
-                  href="https://ak4m410x01.vercel.app"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="Portfolio"
-                >
+                <a href="https://ak4m410x01.vercel.app" class="social-link" target="_blank" aria-label="Portfolio">
                   <i class="fas fa-globe"></i>
                   <span>Portfolio</span>
                 </a>
-                <a
-                  href="http://wa.me/201040534161"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="WhatsApp"
-                >
+                <a href="http://wa.me/201040534161" class="social-link" target="_blank" aria-label="WhatsApp">
                   <i class="fab fa-whatsapp"></i>
                   <span>WhatsApp</span>
                 </a>
-                <a
-                  href="https://t.me/ak4m410x01"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="Telegram"
-                >
+                <a href="https://t.me/ak4m410x01" class="social-link" target="_blank" aria-label="Telegram">
                   <i class="fab fa-telegram"></i>
                   <span>Telegram</span>
                 </a>
-                <a
-                  href="https://www.notion.so/Portfolio-27e4b16f264280ea9e3dcc880c060ca1"
-                  class="social-link"
-                  target="_blank"
-                  aria-label="Notion"
-                >
+                <a href="https://www.notion.so/Portfolio-27e4b16f264280ea9e3dcc880c060ca1" class="social-link"
+                  target="_blank" aria-label="Notion">
                   <i class="fas fa-file-alt"></i>
                   <span>Notion</span>
                 </a>
@@ -1077,49 +1365,26 @@
             <form id="contactForm" class="contact-form">
               <div class="form-group">
                 <label for="name">Full Name *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Enter your full name"
-                  required
-                />
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required />
                 <div class="error-message" id="nameError"></div>
               </div>
 
               <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email address"
-                  required
-                />
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
                 <div class="error-message" id="emailError"></div>
               </div>
 
               <div class="form-group">
                 <label for="subject">Subject *</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="What is this regarding?"
-                  required
-                />
+                <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required />
                 <div class="error-message" id="subjectError"></div>
               </div>
 
               <div class="form-group">
                 <label for="message">Message *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell me about your project or inquiry..."
-                  rows="5"
-                  required
-                ></textarea>
+                <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." rows="5"
+                  required></textarea>
                 <div class="error-message" id="messageError"></div>
               </div>
 
@@ -1166,17 +1431,10 @@
 
               <div class="footer-column">
                 <h4>Resources</h4>
-                <a
-                  href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
-                  download
-                  >Download CV</a
-                >
-                <a href="https://github.com/ak4m410x01" target="_blank"
-                  >GitHub</a
-                >
-                <a href="https://linkedin.com/in/ak4m410x01" target="_blank"
-                  >LinkedIn</a
-                >
+                <a href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view" download>Download
+                  CV</a>
+                <a href="https://github.com/ak4m410x01" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ak4m410x01" target="_blank">LinkedIn</a>
                 <a href="#achievements">Achievements</a>
               </div>
             </div>
@@ -1207,4 +1465,5 @@
     <script src="js/form-handler.js"></script>
     <script src="js/main.js"></script>
   </body>
+
 </html>

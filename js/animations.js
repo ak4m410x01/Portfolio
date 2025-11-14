@@ -140,7 +140,13 @@ class Animations {
     const animatedTitle = document.querySelector(".animated-title");
     if (!animatedTitle) return;
 
-    const words = ["Software Engineer", "Full Stack Developer"];
+    const words = [
+      "Software Engineer",
+      "Full Stack Developer",
+      ".NET Developer",
+      "Cloud Architect",
+      "Enterprise Solutions Architect"
+    ];
 
     // Clear any existing content
     const titleWords = animatedTitle.querySelector(".title-words");

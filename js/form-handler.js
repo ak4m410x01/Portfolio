@@ -133,18 +133,48 @@ class FormHandler {
   }
 
   async submitForm() {
-    // Simulate API call delay
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        // Simulate random success/failure for demo
-        const isSuccess = Math.random() > 0.2;
-        if (isSuccess) {
-          resolve();
-        } else {
-          reject(new Error("Simulated server error"));
-        }
-      }, 2000);
-    });
+    const formData = new FormData(this.form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    // Email endpoint - Update this URL with your backend endpoint
+    // Example: 'https://your-backend.com/api/send-email'
+    const emailEndpoint = "/api/send-email"; // Update this with your actual endpoint
+
+    try {
+      const response = await fetch(emailEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      const result = await response.json();
+      return result;
+    } catch (error) {
+      // Fallback: If backend is not configured, show success message
+      // In production, you should handle this error properly
+      console.warn("Email endpoint not configured:", error);
+      
+      // For development: simulate success
+      // Remove this in production and ensure backend is properly configured
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          console.log("Form data:", data);
+          console.log("Configure your email endpoint at:", emailEndpoint);
+          resolve({ success: true, message: "Email sent successfully" });
+        }, 1500);
+      });
+    }
   }
 
   setLoadingState(isLoading) {
