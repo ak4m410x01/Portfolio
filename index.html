@@ -1,1055 +1,1210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Kamal - Full Stack .NET Developer</title>
+    <meta
+      name="description"
+      content="Full Stack .NET Developer with 2+ years experience in enterprise applications, cloud solutions, and scalable software architecture"
+    />
+    <meta
+      name="keywords"
+      content=".NET Developer, Full Stack Developer, C#, ASP.NET, Cloud Architecture, Software Engineer"
+    />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Abdullah Kamal - Full Stack .NET Developer</title>
-        <meta name="description"
-            content="Full Stack .NET Developer with 2+ years experience in enterprise applications, cloud solutions, and scalable software architecture">
-        <meta name="keywords"
-            content=".NET Developer, Full Stack Developer, C#, ASP.NET, Cloud Architecture, Software Engineer">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+  </head>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/animations.css">
-        <link rel="stylesheet" href="css/components.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Initializing Portfolio...</p>
+      </div>
+    </div>
 
-    <body>
-        <!-- Loading Screen -->
-        <div class="loading-screen" id="loadingScreen">
-            <div class="loading-content">
-                <div class="loading-spinner"></div>
-                <p>Initializing Portfolio...</p>
-            </div>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <div class="logo-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Abdullah Kamal</span>
+            <span class="logo-subtitle">.NET Developer</span>
+          </div>
         </div>
 
-        <!-- Enhanced Navigation -->
-        <nav class="navbar" id="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="logo-text">
-                        <span class="logo-name">Abdullah Kamal</span>
-                        <span class="logo-subtitle">.NET Developer</span>
-                    </div>
-                </div>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#achievements" class="nav-link">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
 
-                <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="nav-toggle" id="navToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <i class="fas fa-star"></i>
+              <span>Available for new opportunities</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="greeting">Hello, I'm</span>
+              <span class="name">Abdullah Kamal</span>
+            </h1>
+
+            <div class="animated-title-container">
+              <h2 class="hero-subtitle">
+                <span class="static-text">=> </span>
+                <span class="animated-title">
+                  <span class="title-words"></span>
+                  <span class="animated-cursor">|</span>
+                </span>
+              </h2>
+            </div>
+
+            <p class="hero-description">
+              I design and build
+              <strong>scalable .NET applications</strong> that are secure,
+              cloud-ready, and built to last. Specializing in enterprise
+              solutions, clean architecture, and high-performance systems.
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-number" data-count="2">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number" data-count="20">0</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get In Touch</span>
+                <i class="fas fa-paper-plane"></i>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
+                class="btn btn-outline"
+                download
+              >
+                <span>Download CV</span>
+                <i class="fas fa-download"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="profile-image-container">
+              <img
+                src="./assets/formal_profile_img.jpg"
+                alt="Abdullah Kamal - Full Stack .NET Developer"
+                class="profile-image"
+              />
+              <div class="profile-frame"></div>
+              <div class="profile-tech-badge">
+                <i class="fab fa-microsoft"></i>
+                <span>.NET Expert</span>
+              </div>
+              <div class="profile-status">
+                <div class="status-dot"></div>
+                <span>Available for work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Crafting robust software solutions with precision and passion
+          </p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <div class="about-intro">
+              <h3>Transforming Ideas into Scalable Solutions</h3>
+              <p>
+                I'm a <strong>Full Stack .NET Developer</strong> with
+                <strong>2+ years</strong> of professional experience
+                specializing in enterprise-grade applications. My expertise lies
+                in transforming complex business requirements into reliable,
+                secure, and maintainable software solutions.
+              </p>
+              <p>
+                With a strong foundation in
+                <strong>competitive programming</strong> and hands-on experience
+                with <strong>mission-critical systems</strong>, I bring a unique
+                combination of algorithmic thinking and practical software
+                engineering to every project.
+              </p>
+            </div>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Location</strong>
+                  <span>Cairo, Egypt</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>Experience</strong>
+                  <span>2+ Years</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>Education</strong>
+                  <span>B.Sc. Computer Science</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-philosophy">
+              <h4>Development Philosophy</h4>
+              <div class="philosophy-grid">
+                <div class="philosophy-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <h5>Security First</h5>
+                  <p>
+                    Building secure applications with robust authentication and
+                    authorization systems
+                  </p>
+                </div>
+                <div class="philosophy-item">
+                  <i class="fas fa-rocket"></i>
+                  <h5>Performance Focused</h5>
+                  <p>
+                    Optimized solutions that scale efficiently under heavy loads
+                  </p>
+                </div>
+                <div class="philosophy-item">
+                  <i class="fas fa-code"></i>
+                  <h5>Clean Code</h5>
+                  <p>Maintainable, well-documented, and testable solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image" data-aos="fade-left">
+            <div class="image-container">
+              <img
+                src="./assets/formal_profile_img.jpg"
+                alt="Abdullah Kamal"
+                class="main-profile-image"
+              />
+              <div class="image-frame"></div>
+              <div class="floating-tech">
+                <span class="tech-tag">.NET Core</span>
+                <span class="tech-tag">Azure</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">SQL Server</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">
+            Comprehensive skills across the full development stack
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend Development -->
+          <div class="skill-category" data-aos="fade-up">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C# & .NET Core</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">ASP.NET Web API</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Entity Framework Core</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">RESTful APIs</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5/CSS3</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="82"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Bootstrap 5</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database & DevOps -->
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-header">
+              <i class="fas fa-database"></i>
+              <h3>Database & DevOps</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL Server</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PostgreSQL</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Docker & Kubernetes</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Azure & AWS</span>
+                  <span class="skill-percentage">78%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="78"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="tech-stack-section" data-aos="fade-up">
+          <h3>Technology Stack</h3>
+          <div class="stack-grid">
+            <div class="stack-category">
+              <h4>Backend Technologies</h4>
+              <div class="stack-items">
+                <span class="stack-item">ASP.NET Core</span>
+                <span class="stack-item">Entity Framework</span>
+                <span class="stack-item">Dapper</span>
+                <span class="stack-item">SignalR</span>
+                <span class="stack-item">gRPC</span>
+                <span class="stack-item">Redis</span>
+              </div>
+            </div>
+            <div class="stack-category">
+              <h4>Frontend Technologies</h4>
+              <div class="stack-items">
+                <span class="stack-item">HTML5</span>
+                <span class="stack-item">CSS3</span>
+                <span class="stack-item">JavaScript</span>
+                <span class="stack-item">Bootstrap</span>
+                <span class="stack-item">jQuery</span>
+              </div>
+            </div>
+            <div class="stack-category">
+              <h4>Tools & DevOps</h4>
+              <div class="stack-items">
+                <span class="stack-item">Git & GitHub</span>
+                <span class="stack-item">Docker</span>
+                <span class="stack-item">Azure DevOps</span>
+                <span class="stack-item">Postman</span>
+                <span class="stack-item">Visual Studio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-subtitle">
+            Building expertise through real-world challenges and innovative
+            solutions
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Egyptian Armed Forces -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <div class="timeline-date">2025 - Present</div>
+              <div class="timeline-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="timeline-text">
+                <h3>Full Stack Developer</h3>
+                <h4>Egyptian Armed Forces</h4>
+                <p>
+                  Design, develop, and maintain mission-critical systems with
+                  focus on security, reliability, and high performance for
+                  national defense operations. Implement robust security
+                  protocols and ensure system integrity.
+                </p>
+                <ul class="timeline-responsibilities">
+                  <li>
+                    Develop secure, scalable applications for defense operations
+                  </li>
+                  <li>
+                    Implement robust authentication and authorization systems
+                  </li>
+                  <li>Optimize system performance and ensure 99.9% uptime</li>
+                  <li>
+                    Collaborate with cross-functional teams on system
+                    architecture
+                  </li>
                 </ul>
-
-                <div class="nav-actions">
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <div class="nav-toggle" id="navToggle">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
+                <div class="timeline-tech">
+                  <span class="tech-tag">.NET Core</span>
+                  <span class="tech-tag">Security</span>
+                  <span class="tech-tag">Enterprise Systems</span>
+                  <span class="tech-tag">High Availability</span>
                 </div>
+              </div>
             </div>
-        </nav>
+          </div>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
+          <!-- National Quality Stores -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="timeline-text">
+                <h3>Full Stack Developer</h3>
+                <h4>National Quality Stores Foundation</h4>
+                <p>
+                  Lead development of comprehensive ERP systems, implementing
+                  scalable architectures and optimizing database performance for
+                  enterprise operations across multiple departments.
+                </p>
+                <ul class="timeline-responsibilities">
+                  <li>
+                    Architect and develop ERP modules for finance, HR, and
+                    inventory
+                  </li>
+                  <li>Optimize SQL queries and database performance</li>
+                  <li>Implement role-based access control systems</li>
+                  <li>Integrate third-party APIs and payment gateways</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span class="tech-tag">ASP.NET Core</span>
+                  <span class="tech-tag">ERP Systems</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">Redis</span>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Forte -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - 2025</div>
+              <div class="timeline-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="timeline-text">
+                <h3>.NET Developer</h3>
+                <h4>Soft Forte</h4>
+                <p>
+                  Developed custom web applications with focus on security,
+                  maintainability, and performance. Collaborated with clients to
+                  understand requirements and deliver tailored solutions.
+                </p>
+                <ul class="timeline-responsibilities">
+                  <li>Built custom web applications using ASP.NET Core</li>
+                  <li>Implemented secure authentication systems</li>
+                  <li>Optimized application performance and scalability</li>
+                  <li>Conducted code reviews and implemented best practices</li>
+                </ul>
+                <div class="timeline-tech">
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">Web Applications</span>
+                  <span class="tech-tag">Security</span>
+                  <span class="tech-tag">Performance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upwork Freelance -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - Present</div>
+              <div class="timeline-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="timeline-text">
+                <h3>Freelance Back-End Developer</h3>
+                <h4>Upwork</h4>
+                <p>
+                  Deliver custom .NET solutions for international clients,
+                  resolving performance bottlenecks and integrating third-party
+                  services to meet diverse business needs.
+                </p>
+                <ul class="timeline-responsibilities">
+                  <li>Develop RESTful APIs and backend services</li>
+                  <li>Integrate third-party services and payment systems</li>
+                  <li>Optimize database performance and query efficiency</li>
+                  <li>
+                    Provide technical consulting and solution architecture
+                  </li>
+                </ul>
+                <div class="timeline-tech">
+                  <span class="tech-tag">API Development</span>
+                  <span class="tech-tag">System Integration</span>
+                  <span class="tech-tag">Performance Tuning</span>
+                  <span class="tech-tag">Consulting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Real-world solutions delivering measurable impact and business value
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- ERP System -->
+          <div class="project-card" data-aos="flip-left">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" aria-label="Source Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Enterprise ERP System</h3>
+                <span class="project-date">2025 - Present</span>
+              </div>
+              <p>
+                Comprehensive enterprise resource planning solution streamlining
+                finance, HR, inventory, and sales operations with advanced
+                role-based access control and real-time analytics.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">EF Core</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">SQL Server</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-chart-bar"></i>
+                  <span>40% Efficiency Improvement</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Real-time Reporting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROCSystem -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" aria-label="Source Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>ROCSystem</h3>
+                <span class="project-date">2025</span>
+              </div>
+              <p>
+                Management system for Egyptian Reserve Officers College handling
+                internal office operations, administrative workflows, and secure
+                document management with advanced access controls.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Identity</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-users"></i>
+                  <span>Streamlined Workflows</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Enhanced Security</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LBSNEE -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" aria-label="Source Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>LBSNEE - E-Commerce API</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>
+                Localized shopping API enabling customers to connect with
+                clothing stores, featuring Redis caching, Dockerized deployment,
+                and load balancing for high performance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Load Balancing</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-bolt"></i>
+                  <span>High Performance</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-expand"></i>
+                  <span>Scalable Architecture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sakany -->
+          <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" class="project-link" aria-label="Source Code">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <h3>Sakany - Real Estate Platform</h3>
+                <span class="project-date">2024</span>
+              </div>
+              <p>
+                Real estate API connecting customers with realtors for renting
+                and buying properties, featuring JWT authentication, Twilio
+                integration, and CQRS pattern implementation.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">EF Core</span>
+                <span class="tech-tag">CQRS</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Twilio</span>
+              </div>
+              <div class="project-impact">
+                <div class="impact-item">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>SMS Integration</span>
+                </div>
+                <div class="impact-item">
+                  <i class="fas fa-lock"></i>
+                  <span>Secure Authentication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-cta" data-aos="fade-up">
+          <p>Interested in seeing more projects?</p>
+          <a
+            href="https://github.com/ak4m410x01"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            <span>View GitHub Profile</span>
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Achievements & Recognition</h2>
+          <p class="section-subtitle">
+            Demonstrating excellence in technology, leadership, and continuous
+            learning
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card" data-aos="zoom-in">
+            <div class="achievement-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>ICPC ECPC 2022</h3>
+            <p>
+              Ranked #21 out of 300+ teams in the Egyptian Collegiate
+              Programming Contest, showcasing exceptional problem-solving
+              skills.
+            </p>
+            <span class="achievement-date">August 2022</span>
+          </div>
+
+          <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="achievement-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Technical Mentor & Instructor</h3>
+            <p>
+              Mentored 50+ students in competitive programming and conducted
+              workshops on Network Fundamentals and Linux Administration.
+            </p>
+            <span class="achievement-date">2021 - 2023</span>
+          </div>
+
+          <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="achievement-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>DEPI Certified Developer</h3>
+            <p>
+              Completed intensive .NET Developer program through Digital Egypt
+              Pioneers Initiative, mastering enterprise development.
+            </p>
+            <span class="achievement-date">2024</span>
+          </div>
+
+          <div class="achievement-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="achievement-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Open Source Contributor</h3>
+            <p>
+              Active contributor to various open-source projects with focus on
+              .NET ecosystem and developer tools.
+            </p>
+            <span class="achievement-date">Ongoing</span>
+          </div>
+        </div>
+
+        <!-- Coding Profiles -->
+        <div class="coding-profiles" data-aos="fade-up">
+          <h3>Coding Profiles</h3>
+          <div class="profiles-grid">
+            <a
+              href="https://github.com/ak4m410x01"
+              class="profile-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+              <small>ak4m410x01</small>
+            </a>
+            <a
+              href="https://leetcode.com/u/ak4m410x01"
+              class="profile-link"
+              target="_blank"
+            >
+              <i class="fas fa-code"></i>
+              <span>LeetCode</span>
+              <small>ak4m410x01</small>
+            </a>
+            <a
+              href="https://codeforces.com/profile/ak4m410x01"
+              class="profile-link"
+              target="_blank"
+            >
+              <i class="fas fa-chart-line"></i>
+              <span>CodeForces</span>
+              <small>ak4m410x01</small>
+            </a>
+            <a
+              href="https://icpc.global/ICPCID/RYCWA1HDIYZ3"
+              class="profile-link"
+              target="_blank"
+            >
+              <i class="fas fa-trophy"></i>
+              <span>ICPC Global</span>
+              <small>Official Profile</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            Ready to bring your ideas to life? I'm just a message away!
+          </p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-intro">
+              <h3>Get In Touch</h3>
+              <p>
+                I'm currently available for freelance work and full-time
+                opportunities. Whether you have a project in mind or just want
+                to connect, I'd love to hear from you.
+              </p>
             </div>
 
-            <div class="container">
-                <div class="hero-content" data-aos="fade-up">
-                    <div class="hero-text">
-                        <div class="hero-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Available for new opportunities</span>
-                        </div>
-
-                        <h1 class="hero-title">
-                            <span class="greeting">Hello, I'm</span>
-                            <span class="name">Abdullah Kamal</span>
-                        </h1>
-
-                        <div class="animated-title-container">
-                            <h2 class="hero-subtitle">
-                                <span class="static-text">=> </span>
-                                <span class="animated-title">
-                                    <span class="title-words"></span>
-                                    <span class="animated-cursor">|</span>
-                                </span>
-                            </h2>
-                        </div>
-
-                        <p class="hero-description">
-                            I design and build <strong>scalable .NET applications</strong> that are secure, cloud-ready,
-                            and built to last. Specializing in enterprise solutions, clean architecture, and
-                            high-performance systems.
-                        </p>
-
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <div class="stat-number" data-count="2">0</div>
-                                <div class="stat-label">Years Experience</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number" data-count="20">0</div>
-                                <div class="stat-label">Projects</div>
-                            </div>
-                            <div class="stat">
-                                <div class="stat-number" data-count="15">0</div>
-                                <div class="stat-label">Technologies</div>
-                            </div>
-                        </div>
-
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary">
-                                <span>View My Work</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                <span>Get In Touch</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
-                                class="btn btn-outline" download>
-                                <span>Download CV</span>
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="hero-visual">
-                        <div class="profile-image-container">
-                            <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal - Full Stack .NET Developer"
-                                class="profile-image">
-                            <div class="profile-frame"></div>
-                            <div class="profile-tech-badge">
-                                <i class="fab fa-microsoft"></i>
-                                <span>.NET Expert</span>
-                            </div>
-                            <div class="profile-status">
-                                <div class="status-dot"></div>
-                                <span>Available for work</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="contact-methods">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
                 </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <a href="mailto:abdullah.kamal0x01@gmail.com"
+                    >abdullah.kamal0x01@gmail.com</a
+                  >
+                  <a href="mailto:abdullah.kamal0x01@outlook.com"
+                    >abdullah.kamal0x01@outlook.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <a href="tel:+201040534161">+20 104 053 4161</a>
+                  <span>Available via WhatsApp</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <span>Cairo, Egypt</span>
+                  <span>Open to remote work</span>
+                </div>
+              </div>
             </div>
 
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
+            <div class="social-links">
+              <h4>Follow Me</h4>
+              <div class="social-grid">
+                <a
+                  href="https://linkedin.com/in/ak4m410x01"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a
+                  href="https://github.com/ak4m410x01"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a
+                  href="https://ak4m410x01.vercel.app"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="Portfolio"
+                >
+                  <i class="fas fa-globe"></i>
+                  <span>Portfolio</span>
+                </a>
+                <a
+                  href="http://wa.me/201040534161"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href="https://t.me/ak4m410x01"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="Telegram"
+                >
+                  <i class="fab fa-telegram"></i>
+                  <span>Telegram</span>
+                </a>
+                <a
+                  href="https://www.notion.so/Portfolio-27e4b16f264280ea9e3dcc880c060ca1"
+                  class="social-link"
+                  target="_blank"
+                  aria-label="Notion"
+                >
+                  <i class="fas fa-file-alt"></i>
+                  <span>Notion</span>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Crafting robust software solutions with precision and passion</p>
-                </div>
-
-                <div class="about-content">
-                    <div class="about-text" data-aos="fade-right">
-                        <div class="about-intro">
-                            <h3>Transforming Ideas into Scalable Solutions</h3>
-                            <p>
-                                I'm a <strong>Full Stack .NET Developer</strong> with <strong>2+ years</strong> of
-                                professional experience
-                                specializing in enterprise-grade applications. My expertise lies in transforming complex
-                                business
-                                requirements into reliable, secure, and maintainable software solutions.
-                            </p>
-                            <p>
-                                With a strong foundation in <strong>competitive programming</strong> and hands-on
-                                experience with
-                                <strong>mission-critical systems</strong>, I bring a unique combination of algorithmic
-                                thinking
-                                and practical software engineering to every project.
-                            </p>
-                        </div>
-
-                        <div class="about-details">
-                            <div class="detail-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <strong>Location</strong>
-                                    <span>Cairo, Egypt</span>
-                                </div>
-                            </div>
-                            <div class="detail-item">
-                                <i class="fas fa-briefcase"></i>
-                                <div>
-                                    <strong>Experience</strong>
-                                    <span>2+ Years</span>
-                                </div>
-                            </div>
-                            <div class="detail-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <div>
-                                    <strong>Education</strong>
-                                    <span>B.Sc. Computer Science</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-philosophy">
-                            <h4>Development Philosophy</h4>
-                            <div class="philosophy-grid">
-                                <div class="philosophy-item">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <h5>Security First</h5>
-                                    <p>Building secure applications with robust authentication and authorization systems
-                                    </p>
-                                </div>
-                                <div class="philosophy-item">
-                                    <i class="fas fa-rocket"></i>
-                                    <h5>Performance Focused</h5>
-                                    <p>Optimized solutions that scale efficiently under heavy loads</p>
-                                </div>
-                                <div class="philosophy-item">
-                                    <i class="fas fa-code"></i>
-                                    <h5>Clean Code</h5>
-                                    <p>Maintainable, well-documented, and testable solutions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-image" data-aos="fade-left">
-                        <div class="image-container">
-                            <img src="./assets/formal_profile_img.jpg" alt="Abdullah Kamal" class="main-profile-image">
-                            <div class="image-frame"></div>
-                            <div class="floating-tech">
-                                <span class="tech-tag">.NET Core</span>
-                                <span class="tech-tag">Azure</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">SQL Server</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="contact-form-container" data-aos="fade-left">
+            <div class="form-header">
+              <h3>Send Message</h3>
+              <p>I typically respond within 24 hours</p>
             </div>
-        </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Technical Expertise</h2>
-                    <p class="section-subtitle">Comprehensive skills across the full development stack</p>
-                </div>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+                <div class="error-message" id="nameError"></div>
+              </div>
 
-                <div class="skills-grid">
-                    <!-- Backend Development -->
-                    <div class="skill-category" data-aos="fade-up">
-                        <div class="category-header">
-                            <i class="fas fa-server"></i>
-                            <h3>Backend Development</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">C# & .NET Core</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">ASP.NET Web API</span>
-                                    <span class="skill-percentage">92%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="92"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Entity Framework Core</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">RESTful APIs</span>
-                                    <span class="skill-percentage">88%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="88"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <div class="error-message" id="emailError"></div>
+              </div>
 
-                    <!-- Frontend Development -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                        <div class="category-header">
-                            <i class="fas fa-code"></i>
-                            <h3>Frontend Development</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">HTML5/CSS3</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percentage">82%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="82"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Bootstrap 5</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Responsive Design</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What is this regarding?"
+                  required
+                />
+                <div class="error-message" id="subjectError"></div>
+              </div>
 
-                    <!-- Database & DevOps -->
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <div class="category-header">
-                            <i class="fas fa-database"></i>
-                            <h3>Database & DevOps</h3>
-                        </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">SQL Server</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">PostgreSQL</span>
-                                    <span class="skill-percentage">80%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Docker & Kubernetes</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="75"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Azure & AWS</span>
-                                    <span class="skill-percentage">78%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="78"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell me about your project or inquiry..."
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="error-message" id="messageError"></div>
+              </div>
 
-                <!-- Technology Stack -->
-                <div class="tech-stack-section" data-aos="fade-up">
-                    <h3>Technology Stack</h3>
-                    <div class="stack-grid">
-                        <div class="stack-category">
-                            <h4>Backend Technologies</h4>
-                            <div class="stack-items">
-                                <span class="stack-item">ASP.NET Core</span>
-                                <span class="stack-item">Entity Framework</span>
-                                <span class="stack-item">Dapper</span>
-                                <span class="stack-item">SignalR</span>
-                                <span class="stack-item">gRPC</span>
-                                <span class="stack-item">Redis</span>
-                            </div>
-                        </div>
-                        <div class="stack-category">
-                            <h4>Frontend Technologies</h4>
-                            <div class="stack-items">
-                                <span class="stack-item">HTML5</span>
-                                <span class="stack-item">CSS3</span>
-                                <span class="stack-item">JavaScript</span>
-                                <span class="stack-item">Bootstrap</span>
-                                <span class="stack-item">jQuery</span>
-                            </div>
-                        </div>
-                        <div class="stack-category">
-                            <h4>Tools & DevOps</h4>
-                            <div class="stack-items">
-                                <span class="stack-item">Git & GitHub</span>
-                                <span class="stack-item">Docker</span>
-                                <span class="stack-item">Azure DevOps</span>
-                                <span class="stack-item">Postman</span>
-                                <span class="stack-item">Visual Studio</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fas fa-paper-plane"></i>
+                  <div class="btn-loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                  </div>
+                </button>
+                <div class="form-status" id="formStatus"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <span>Abdullah Kamal</span>
+              </div>
+              <p>
+                Full Stack .NET Developer passionate about building scalable,
+                secure, and efficient software solutions.
+              </p>
             </div>
-        </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Professional Journey</h2>
-                    <p class="section-subtitle">Building expertise through real-world challenges and innovative
-                        solutions</p>
-                </div>
+            <div class="footer-links">
+              <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+              </div>
 
-                <div class="timeline">
-                    <!-- Egyptian Armed Forces -->
-                    <div class="timeline-item" data-aos="fade-right">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2025 - Present</div>
-                            <div class="timeline-icon">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="timeline-text">
-                                <h3>Full Stack Developer</h3>
-                                <h4>Egyptian Armed Forces</h4>
-                                <p>
-                                    Design, develop, and maintain mission-critical systems with focus on security,
-                                    reliability, and high performance for national defense operations. Implement
-                                    robust security protocols and ensure system integrity.
-                                </p>
-                                <ul class="timeline-responsibilities">
-                                    <li>Develop secure, scalable applications for defense operations</li>
-                                    <li>Implement robust authentication and authorization systems</li>
-                                    <li>Optimize system performance and ensure 99.9% uptime</li>
-                                    <li>Collaborate with cross-functional teams on system architecture</li>
-                                </ul>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">.NET Core</span>
-                                    <span class="tech-tag">Security</span>
-                                    <span class="tech-tag">Enterprise Systems</span>
-                                    <span class="tech-tag">High Availability</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- National Quality Stores -->
-                    <div class="timeline-item" data-aos="fade-left">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2024 - Present</div>
-                            <div class="timeline-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="timeline-text">
-                                <h3>Full Stack Developer</h3>
-                                <h4>National Quality Stores Foundation</h4>
-                                <p>
-                                    Lead development of comprehensive ERP systems, implementing scalable architectures
-                                    and optimizing database performance for enterprise operations across multiple
-                                    departments.
-                                </p>
-                                <ul class="timeline-responsibilities">
-                                    <li>Architect and develop ERP modules for finance, HR, and inventory</li>
-                                    <li>Optimize SQL queries and database performance</li>
-                                    <li>Implement role-based access control systems</li>
-                                    <li>Integrate third-party APIs and payment gateways</li>
-                                </ul>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">ASP.NET Core</span>
-                                    <span class="tech-tag">ERP Systems</span>
-                                    <span class="tech-tag">SQL Server</span>
-                                    <span class="tech-tag">Redis</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Soft Forte -->
-                    <div class="timeline-item" data-aos="fade-right">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2024 - 2025</div>
-                            <div class="timeline-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                            <div class="timeline-text">
-                                <h3>.NET Developer</h3>
-                                <h4>Soft Forte</h4>
-                                <p>
-                                    Developed custom web applications with focus on security, maintainability, and
-                                    performance. Collaborated with clients to understand requirements and deliver
-                                    tailored solutions.
-                                </p>
-                                <ul class="timeline-responsibilities">
-                                    <li>Built custom web applications using ASP.NET Core</li>
-                                    <li>Implemented secure authentication systems</li>
-                                    <li>Optimized application performance and scalability</li>
-                                    <li>Conducted code reviews and implemented best practices</li>
-                                </ul>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">C#</span>
-                                    <span class="tech-tag">Web Applications</span>
-                                    <span class="tech-tag">Security</span>
-                                    <span class="tech-tag">Performance</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Upwork Freelance -->
-                    <div class="timeline-item" data-aos="fade-left">
-                        <div class="timeline-content">
-                            <div class="timeline-date">2024 - Present</div>
-                            <div class="timeline-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="timeline-text">
-                                <h3>Freelance Back-End Developer</h3>
-                                <h4>Upwork</h4>
-                                <p>
-                                    Deliver custom .NET solutions for international clients, resolving performance
-                                    bottlenecks and integrating third-party services to meet diverse business needs.
-                                </p>
-                                <ul class="timeline-responsibilities">
-                                    <li>Develop RESTful APIs and backend services</li>
-                                    <li>Integrate third-party services and payment systems</li>
-                                    <li>Optimize database performance and query efficiency</li>
-                                    <li>Provide technical consulting and solution architecture</li>
-                                </ul>
-                                <div class="timeline-tech">
-                                    <span class="tech-tag">API Development</span>
-                                    <span class="tech-tag">System Integration</span>
-                                    <span class="tech-tag">Performance Tuning</span>
-                                    <span class="tech-tag">Consulting</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="footer-column">
+                <h4>Resources</h4>
+                <a
+                  href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
+                  download
+                  >Download CV</a
+                >
+                <a href="https://github.com/ak4m410x01" target="_blank"
+                  >GitHub</a
+                >
+                <a href="https://linkedin.com/in/ak4m410x01" target="_blank"
+                  >LinkedIn</a
+                >
+                <a href="#achievements">Achievements</a>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Real-world solutions delivering measurable impact and business value</p>
-                </div>
-
-                <div class="projects-grid">
-                    <!-- ERP System -->
-                    <div class="project-card" data-aos="flip-left">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Live Demo">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="project-link" aria-label="Source Code">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Enterprise ERP System</h3>
-                                <span class="project-date">2025 - Present</span>
-                            </div>
-                            <p>
-                                Comprehensive enterprise resource planning solution streamlining finance, HR, inventory,
-                                and sales operations with advanced role-based access control and real-time analytics.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">ASP.NET Core</span>
-                                <span class="tech-tag">EF Core</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">SQL Server</span>
-                            </div>
-                            <div class="project-impact">
-                                <div class="impact-item">
-                                    <i class="fas fa-chart-bar"></i>
-                                    <span>40% Efficiency Improvement</span>
-                                </div>
-                                <div class="impact-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>Real-time Reporting</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ROCSystem -->
-                    <div class="project-card" data-aos="flip-left" data-aos-delay="100">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Live Demo">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="#" class="project-link" aria-label="Source Code">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <i class="fas fa-university"></i>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>ROCSystem</h3>
-                                <span class="project-date">2025</span>
-                            </div>
-                            <p>
-                                Management system for Egyptian Reserve Officers College handling internal office
-                                operations,
-                                administrative workflows, and secure document management with advanced access controls.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">ASP.NET Core</span>
-                                <span class="tech-tag">SQL Server</span>
-                                <span class="tech-tag">Identity</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                            <div class="project-impact">
-                                <div class="impact-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Streamlined Workflows</span>
-                                </div>
-                                <div class="impact-item">
-                                    <i class="fas fa-shield-alt"></i>
-                                    <span>Enhanced Security</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- LBSNEE -->
-                    <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Live Demo">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/ak4m410x01/LBSNEE" class="project-link"
-                                        aria-label="Source Code">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>LBSNEE - E-Commerce API</h3>
-                                <span class="project-date">2024</span>
-                            </div>
-                            <p>
-                                Localized shopping API enabling customers to connect with clothing stores, featuring
-                                Redis caching, Dockerized deployment, and load balancing for high performance.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">ASP.NET Core</span>
-                                <span class="tech-tag">Redis</span>
-                                <span class="tech-tag">Docker</span>
-                                <span class="tech-tag">Load Balancing</span>
-                            </div>
-                            <div class="project-impact">
-                                <div class="impact-item">
-                                    <i class="fas fa-bolt"></i>
-                                    <span>High Performance</span>
-                                </div>
-                                <div class="impact-item">
-                                    <i class="fas fa-expand"></i>
-                                    <span>Scalable Architecture</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sakany -->
-                    <div class="project-card" data-aos="flip-left" data-aos-delay="300">
-                        <div class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Live Demo">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/ak4m410x01/Sakany" class="project-link"
-                                        aria-label="Source Code">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Sakany - Real Estate Platform</h3>
-                                <span class="project-date">2024</span>
-                            </div>
-                            <p>
-                                Real estate API connecting customers with realtors for renting and buying properties,
-                                featuring JWT authentication, Twilio integration, and CQRS pattern implementation.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">ASP.NET Core</span>
-                                <span class="tech-tag">EF Core</span>
-                                <span class="tech-tag">CQRS</span>
-                                <span class="tech-tag">JWT</span>
-                                <span class="tech-tag">Twilio</span>
-                            </div>
-                            <div class="project-impact">
-                                <div class="impact-item">
-                                    <i class="fas fa-mobile-alt"></i>
-                                    <span>SMS Integration</span>
-                                </div>
-                                <div class="impact-item">
-                                    <i class="fas fa-lock"></i>
-                                    <span>Secure Authentication</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projects-cta" data-aos="fade-up">
-                    <p>Interested in seeing more projects?</p>
-                    <a href="https://github.com/ak4m410x01" class="btn btn-primary" target="_blank">
-                        <span>View GitHub Profile</span>
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
+          <div class="footer-bottom">
+            <div class="footer-copyright">
+              <p>&copy; 2024 Abdullah Kamal. All rights reserved.</p>
+              <p>Built with <i class="fas fa-heart"></i> and .NET expertise</p>
             </div>
-        </section>
 
-        <!-- Achievements Section -->
-        <section id="achievements" class="achievements">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Achievements & Recognition</h2>
-                    <p class="section-subtitle">Demonstrating excellence in technology, leadership, and continuous
-                        learning</p>
-                </div>
-
-                <div class="achievements-grid">
-                    <div class="achievement-card" data-aos="zoom-in">
-                        <div class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>ICPC ECPC 2022</h3>
-                        <p>Ranked #21 out of 300+ teams in the Egyptian Collegiate Programming Contest, showcasing
-                            exceptional problem-solving skills.</p>
-                        <span class="achievement-date">August 2022</span>
-                    </div>
-
-                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="achievement-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Technical Mentor & Instructor</h3>
-                        <p>Mentored 50+ students in competitive programming and conducted workshops on Network
-                            Fundamentals and Linux Administration.</p>
-                        <span class="achievement-date">2021 - 2023</span>
-                    </div>
-
-                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="achievement-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>DEPI Certified Developer</h3>
-                        <p>Completed intensive .NET Developer program through Digital Egypt Pioneers Initiative,
-                            mastering enterprise development.</p>
-                        <span class="achievement-date">2024</span>
-                    </div>
-
-                    <div class="achievement-card" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="achievement-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Open Source Contributor</h3>
-                        <p>Active contributor to various open-source projects with focus on .NET ecosystem and developer
-                            tools.</p>
-                        <span class="achievement-date">Ongoing</span>
-                    </div>
-                </div>
-
-                <!-- Coding Profiles -->
-                <div class="coding-profiles" data-aos="fade-up">
-                    <h3>Coding Profiles</h3>
-                    <div class="profiles-grid">
-                        <a href="https://github.com/ak4m410x01" class="profile-link" target="_blank">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                            <small>ak4m410x01</small>
-                        </a>
-                        <a href="https://leetcode.com/u/ak4m410x01" class="profile-link" target="_blank">
-                            <i class="fas fa-code"></i>
-                            <span>LeetCode</span>
-                            <small>ak4m410x01</small>
-                        </a>
-                        <a href="https://codeforces.com/profile/ak4m410x01" class="profile-link" target="_blank">
-                            <i class="fas fa-chart-line"></i>
-                            <span>CodeForces</span>
-                            <small>ak4m410x01</small>
-                        </a>
-                        <a href="https://icpc.global/ICPCID/RYCWA1HDIYZ3" class="profile-link" target="_blank">
-                            <i class="fas fa-trophy"></i>
-                            <span>ICPC Global</span>
-                            <small>Official Profile</small>
-                        </a>
-                    </div>
-                </div>
+            <div class="footer-back">
+              <a href="#home" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+                <span>Back to Top</span>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <p class="section-subtitle">Ready to bring your ideas to life? I'm just a message away!</p>
-                </div>
-
-                <div class="contact-content">
-                    <div class="contact-info" data-aos="fade-right">
-                        <div class="contact-intro">
-                            <h3>Get In Touch</h3>
-                            <p>
-                                I'm currently available for freelance work and full-time opportunities.
-                                Whether you have a project in mind or just want to connect, I'd love to hear from you.
-                            </p>
-                        </div>
-
-                        <div class="contact-methods">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Email</h4>
-                                    <a href="mailto:abdullah.kamal0x01@gmail.com">abdullah.kamal0x01@gmail.com</a>
-                                    <a href="mailto:abdullah.kamal0x01@outlook.com">abdullah.kamal0x01@outlook.com</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Phone</h4>
-                                    <a href="tel:+201040534161">+20 104 053 4161</a>
-                                    <span>Available via WhatsApp</span>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Location</h4>
-                                    <span>Cairo, Egypt</span>
-                                    <span>Open to remote work</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-links">
-                            <h4>Follow Me</h4>
-                            <div class="social-grid">
-                                <a href="https://linkedin.com/in/ak4m410x01" class="social-link" target="_blank"
-                                    aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    <span>LinkedIn</span>
-                                </a>
-                                <a href="https://github.com/ak4m410x01" class="social-link" target="_blank"
-                                    aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="https://ak4m410x01.vercel.app" class="social-link" target="_blank"
-                                    aria-label="Portfolio">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Portfolio</span>
-                                </a>
-                                <a href="http://wa.me/201040534161" class="social-link" target="_blank"
-                                    aria-label="WhatsApp">
-                                    <i class="fab fa-whatsapp"></i>
-                                    <span>WhatsApp</span>
-                                </a>
-                                <a href="https://t.me/ak4m410x01" class="social-link" target="_blank"
-                                    aria-label="Telegram">
-                                    <i class="fab fa-telegram"></i>
-                                    <span>Telegram</span>
-                                </a>
-                                <a href="https://www.notion.so/Portfolio-27e4b16f264280ea9e3dcc880c060ca1"
-                                    class="social-link" target="_blank" aria-label="Notion">
-                                    <i class="fas fa-file-alt"></i>
-                                    <span>Notion</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-form-container" data-aos="fade-left">
-                        <div class="form-header">
-                            <h3>Send Message</h3>
-                            <p>I typically respond within 24 hours</p>
-                        </div>
-
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                                <div class="error-message" id="nameError"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email address"
-                                    required>
-                                <div class="error-message" id="emailError"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
-                                    required>
-                                <div class="error-message" id="subjectError"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message"
-                                    placeholder="Tell me about your project or inquiry..." rows="5" required></textarea>
-                                <div class="error-message" id="messageError"></div>
-                            </div>
-
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary btn-submit">
-                                    <span class="btn-text">Send Message</span>
-                                    <i class="fas fa-paper-plane"></i>
-                                    <div class="btn-loading">
-                                        <i class="fas fa-spinner fa-spin"></i>
-                                    </div>
-                                </button>
-                                <div class="form-status" id="formStatus"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-main">
-                        <div class="footer-brand">
-                            <div class="footer-logo">
-                                <i class="fas fa-code"></i>
-                                <span>Abdullah Kamal</span>
-                            </div>
-                            <p>Full Stack .NET Developer passionate about building scalable, secure, and efficient
-                                software solutions.</p>
-                        </div>
-
-                        <div class="footer-links">
-                            <div class="footer-column">
-                                <h4>Quick Links</h4>
-                                <a href="#home">Home</a>
-                                <a href="#about">About</a>
-                                <a href="#projects">Projects</a>
-                                <a href="#contact">Contact</a>
-                            </div>
-
-                            <div class="footer-column">
-                                <h4>Resources</h4>
-                                <a href="https://drive.google.com/file/d/1tCi71RwozvA6SH-KT-XtZad9-Rx9alqv/view"
-                                    download>Download CV</a>
-                                <a href="https://github.com/ak4m410x01" target="_blank">GitHub</a>
-                                <a href="https://linkedin.com/in/ak4m410x01" target="_blank">LinkedIn</a>
-                                <a href="#achievements">Achievements</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <div class="footer-copyright">
-                            <p>&copy; 2024 Abdullah Kamal. All rights reserved.</p>
-                            <p>Built with <i class="fas fa-heart"></i> and .NET expertise</p>
-                        </div>
-
-                        <div class="footer-back">
-                            <a href="#home" class="back-to-top">
-                                <i class="fas fa-arrow-up"></i>
-                                <span>Back to Top</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script src="js/utils.js"></script>
-        <script src="js/navigation.js"></script>
-        <script src="js/animations.js"></script>
-        <script src="js/form-handler.js"></script>
-        <script src="js/main.js"></script>
-    </body>
-
-
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
