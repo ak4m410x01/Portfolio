@@ -129,8 +129,8 @@ class PortfolioApp {
       link.as = resource.includes(".css")
         ? "style"
         : resource.includes(".woff")
-        ? "font"
-        : "image";
+          ? "font"
+          : "image";
       document.head.appendChild(link);
     });
   }

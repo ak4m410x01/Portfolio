@@ -13,7 +13,7 @@
 }
 
 [data-theme="dark"] .navbar {
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(10, 10, 10, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -44,7 +44,7 @@
 .logo-icon {
   width: 45px;
   height: 45px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@
   color: var(--white);
   font-size: 1.3rem;
   transition: var(--transition);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -77,7 +77,7 @@
 
 .nav-logo:hover .logo-icon {
   transform: rotate(5deg) scale(1.1);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
 }
 
 .logo-text {
@@ -134,10 +134,10 @@
   transform: translateX(-50%);
   width: 0;
   height: 3px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 3px;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.4);
 }
 
 .nav-link::after {
@@ -178,12 +178,12 @@
 .nav-link.active::after {
   opacity: 0.12;
   transform: scale(1);
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
 }
 
 .nav-link.active::before {
   width: calc(100% - 32px);
-  box-shadow: 0 2px 12px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 2px 12px rgba(168, 85, 247, 0.5);
 }
 
 [data-theme="dark"] .nav-link:hover {
@@ -241,7 +241,7 @@
   border-color: var(--primary-500);
   color: var(--primary-500);
   transform: rotate(360deg) scale(1.1);
-  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
 }
 
 .theme-toggle:active {
@@ -509,7 +509,7 @@
   position: absolute;
   bottom: 30px;
   right: -10px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   color: var(--white);
   padding: 8px 15px;
   border-radius: 20px;
@@ -540,7 +540,7 @@
 }
 
 [data-theme="dark"] .profile-status {
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(10, 10, 10, 0.9);
   color: var(--gray-100);
 }
 
@@ -855,7 +855,7 @@
 
 .skill-progress {
   height: 100%;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   border-radius: 4px;
   width: 0;
   transition: width 1.5s ease-in-out;
@@ -909,7 +909,7 @@
   color: var(--white);
   border-color: var(--primary-500);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
 }
 
 [data-theme="dark"] .stack-item:hover {
@@ -935,7 +935,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
 }
 
 .timeline-item {
@@ -963,7 +963,7 @@
 }
 
 .timeline-date {
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   color: var(--white);
   padding: 8px 16px;
   border-radius: 20px;
@@ -979,7 +979,7 @@
 .timeline-icon {
   width: 60px;
   height: 60px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1081,7 +1081,7 @@
 
 .project-image {
   height: 200px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1239,7 +1239,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
 }
 
 .achievement-card:hover {
@@ -1250,7 +1250,7 @@
 .achievement-icon {
   width: 80px;
   height: 80px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1705,7 +1705,7 @@
   left: 0;
   width: 100%;
   height: 4px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   transform: scaleX(0);
   transform-origin: left;
   transition: var(--transition);
@@ -1724,7 +1724,7 @@
 .service-icon {
   width: 70px;
   height: 70px;
-  background: var(--gradient-primary);
+  background: var(--gradient-net);
   border-radius: 16px;
   display: flex;
   align-items: center;

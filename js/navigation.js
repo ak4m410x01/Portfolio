@@ -181,7 +181,7 @@ class Navigation {
     }
 
     if (theme === "dark") {
-      metaThemeColor.content = "#0f172a"; // Dark theme color
+      metaThemeColor.content = "#0a0a0a"; // Dark theme color
     } else {
       metaThemeColor.content = "#ffffff"; // Light theme color
     }

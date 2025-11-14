@@ -118,7 +118,7 @@ class FormHandler {
     this.setLoadingState(true);
 
     try {
-      // Simulate API call - replace with actual form submission
+      // Simulate form submission (frontend only)
       await this.submitForm();
 
       this.showSuccess();
@@ -141,40 +141,14 @@ class FormHandler {
       message: formData.get("message"),
     };
 
-    // Email endpoint - Update this URL with your backend endpoint
-    // Example: 'https://your-backend.com/api/send-email'
-    const emailEndpoint = "/api/send-email"; // Update this with your actual endpoint
-
-    try {
-      const response = await fetch(emailEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to send email");
-      }
-
-      const result = await response.json();
-      return result;
-    } catch (error) {
-      // Fallback: If backend is not configured, show success message
-      // In production, you should handle this error properly
-      console.warn("Email endpoint not configured:", error);
-      
-      // For development: simulate success
-      // Remove this in production and ensure backend is properly configured
-      return new Promise((resolve) => {
-        setTimeout(() => {
-          console.log("Form data:", data);
-          console.log("Configure your email endpoint at:", emailEndpoint);
-          resolve({ success: true, message: "Email sent successfully" });
-        }, 1500);
-      });
-    }
+    // Simulate API call - In a real implementation, this would be your backend endpoint
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("Form data received:", data);
+        console.log("Note: This is a frontend-only implementation. In production, connect to a backend service.");
+        resolve({ success: true, message: "Message sent successfully" });
+      }, 1500);
+    });
   }
 
   setLoadingState(isLoading) {

@@ -217,7 +217,7 @@ class Animations {
             left: 0;
             width: 0%;
             height: 3px;
-            background: var(--gradient-primary);
+            background: var(--gradient-net);
             z-index: 10000;
             transition: width 0.1s ease;
         `;
